@@ -286,6 +286,16 @@ Updated from atml.lbr 17.01.2005 alf@cadsoft.de</description>
 <text x="-1.5" y="-1.25" size="0.6096" layer="27">&gt;VALUE</text>
 <text x="-1.5" y="0.5" size="0.6096" layer="25">&gt;NAME</text>
 </package>
+<package name="AWIRE">
+<pad name="P$1" x="-2.54" y="1.27" drill="0.8" shape="square"/>
+<pad name="P$2" x="0" y="1.27" drill="0.8"/>
+<pad name="P$3" x="2.54" y="1.27" drill="0.8"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
+<text x="-3.81" y="3.175" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TCD1304AP">
@@ -374,6 +384,17 @@ Updated from atml.lbr 17.01.2005 alf@cadsoft.de</description>
 <wire x1="-27.94" y1="-68.58" x2="-27.94" y2="25.4" width="0.254" layer="94"/>
 <text x="-27.94" y="25.4" size="1.778" layer="94">&gt;NAME</text>
 <text x="-2.54" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="AWIRE">
+<pin name="DATA" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="GND" x="-5.08" y="-5.08" visible="pin" length="middle"/>
+<wire x1="0" y1="-7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<text x="0" y="7.62" size="1.27" layer="94">&gt;NAME</text>
+<text x="0" y="-10.16" size="1.27" layer="94">&gt;VALUE</text>
+<pin name="VCC" x="-5.08" y="5.08" visible="pin" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -469,6 +490,23 @@ Updated from atml.lbr 17.01.2005 alf@cadsoft.de</description>
 <connect gate="G$1" pin="VDDIO1" pad="P$5"/>
 <connect gate="G$1" pin="VDDIO2" pad="P$35"/>
 <connect gate="G$1" pin="VDDIO3" pad="P$51"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AWIRE">
+<gates>
+<gate name="G$1" symbol="AWIRE" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="AWIRE">
+<connects>
+<connect gate="G$1" pin="DATA" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

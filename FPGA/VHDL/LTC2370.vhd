@@ -4,8 +4,8 @@ entity IRIS_v2 is
 
 port(
 
-    Reset_n : in std_logic;
-    Clk 	: in std_logic;
+	Reset_n : in std_logic;
+	Clk 	: in std_logic;
 
     OSC_out : out std_logic;
     
@@ -115,45 +115,5 @@ Read data from ADC buffer and write them to FIFO
 
 Read data from ADC and write them to buffers
 
-—-
-—-  TCD1304 management 
-—-
-
-CCD_CLK_Gen: process(Reset_n, Clk)
-begin
-end process;
-
-TCD1304Man:	process(Reset_n, CCD_Clk)
-begin
-
-  if Reset_n=‘0’
-  then
-    TCD_Clk <= ‘0’;
-    TCD_Icg <= ‘0’;
-    TCD_Sh  <= ‘0’;
-    CCD_Cpt <= (others => ‘0’);
-  else
-    if CCD_Clk =‘1’ and CCD_Clk’event
-    then 
-         CCD_Cpt <= CCD_Cpt + 1;
-
-         if CCD_Cpt >=0 and CCD_Cpt <= TBD
-         then TCD_Icg <= ‘1’;
-         else TCD_Icg <= ‘0’;
-         end if;
-
-         if CCD_Cpt >=0 and CCD_Cpt <= TBD
-         then TCD_Sh  <= ‘1’;
-         else TCD_Sh  <= ‘0’;
-         end if;
-
-         if CCD_Cpt = TBD
-         then CCD_Cpt <= (others => ‘0’);
-         end if;
-    end if;
-  end if;
-  
-
-end process;
 
 end A1;

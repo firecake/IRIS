@@ -1,0 +1,5 @@
+set -tmpdir "C:/IRIS/IRIS/work/xst/projnav.tmp"
+set -xsthdpdir "C:/IRIS/IRIS/work/xst"
+elaborate
+-ifn IRIS_v2.prj
+-ifmt mixed

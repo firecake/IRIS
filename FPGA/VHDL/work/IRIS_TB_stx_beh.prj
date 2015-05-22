@@ -1,0 +1,4 @@
+vhdl isim_temp "../ipcore_dir/RAM.vhd"
+vhdl isim_temp "../vhdl/IRIS_Pack.vhd"
+vhdl isim_temp "../vhdl/IRISv2.vhd"
+vhdl isim_temp "../vhdl/IRIS_TB.vhd"

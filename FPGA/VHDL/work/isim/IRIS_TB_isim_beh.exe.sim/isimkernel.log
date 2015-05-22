@@ -1,0 +1,29 @@
+Command line:
+   IRIS_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1210
+
+Sun May 03 01:34:31 2015
+
+
+ Elaboration Time: 0.180259 sec
+
+ Current Memory Usage: 506.442 Meg
+
+ Total Signals          : 275
+ Total Nets             : 66318
+ Total Signal Drivers   : 101
+ Total Blocks           : 20
+ Total Primitive Blocks : 11
+ Total Processes        : 50
+ Total Traceable Variables  : 228
+ Total Scalar Nets and Variables : 67716
+Total Line Count : 493
+
+ Total Simulation Time: 22.6726 sec
+
+ Current Memory Usage: 349.155 Meg
+
+Sun May 03 01:55:02 2015
+

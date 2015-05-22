@@ -1,0 +1,601 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: IRIS.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IRIS.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IRIS"
+Output Format                      : NGC
+Target Device                      : xc3s200a-4-vq100
+
+---- Source Options
+Top Module Name                    : IRIS
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : NO
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/IRIS/IRIS/vhdl/IRIS_Pack.vhd" in Library work.
+Architecture iris_pack of Entity iris_pack is up to date.
+Compiling vhdl file "C:/IRIS/IRIS/ipcore_dir/RAM.vhd" in Library work.
+Architecture ram_a of Entity ram is up to date.
+Compiling vhdl file "C:/IRIS/IRIS/ItoA.vhd" in Library work.
+Architecture behavioral of Entity itoa is up to date.
+Compiling vhdl file "C:/IRIS/IRIS/vhdl/IRISv2.vhd" in Library work.
+Entity <iris> compiled.
+Entity <iris> (Architecture <a1>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <IRIS> in library <work> (architecture <a1>).
+
+Analyzing hierarchy for entity <ItoA> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <IRIS> in library <work> (Architecture <a1>).
+WARNING:Xst:790 - "C:/IRIS/IRIS/vhdl/IRISv2.vhd" line 196: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/IRIS/IRIS/vhdl/IRISv2.vhd" line 216: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:2211 - "C:/IRIS/IRIS/vhdl/IRISv2.vhd" line 423: Instantiating black box module <RAM>.
+WARNING:Xst:751 - "C:/IRIS/IRIS/vhdl/IRISv2.vhd" line 440: Bad association for formal port 'l' of component 'ItoA'.
+WARNING:Xst:751 - "C:/IRIS/IRIS/vhdl/IRISv2.vhd" line 441: Bad association for formal port 'l' of component 'ItoA'.
+Entity <IRIS> analyzed. Unit <IRIS> generated.
+
+Analyzing Entity <ItoA> in library <work> (Architecture <behavioral>).
+Entity <ItoA> analyzed. Unit <ItoA> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ItoA>.
+    Related source file is "C:/IRIS/IRIS/ItoA.vhd".
+    Found 256x64-bit ROM for signal <I$rom0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <ItoA> synthesized.
+
+
+Synthesizing Unit <IRIS>.
+    Related source file is "C:/IRIS/IRIS/vhdl/IRISv2.vhd".
+WARNING:Xst:647 - Input <ADC_Busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <Data<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ASCII_MSB_Length> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ASCII_MSB_Data<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ASCII_LSB_Length> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ASCII_LSB_Data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <FT_current_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 22                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 13                                             |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_idle                                         |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <Acq_current_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 21                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 13                                             |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_idle                                         |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "C:/IRIS/IRIS/vhdl/IRISv2.vhd" line 182: The result of a 8x4-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit register for signal <FT2232_FSDI>.
+    Found 1-bit register for signal <ADC_Cnv>.
+    Found 1-bit register for signal <TCD_Icg>.
+    Found 1-bit register for signal <TCD_Sh>.
+    Found 8x4-bit multiplier for signal <$mult0000> created at line 182.
+    Found 16-bit comparator equal for signal <Acq_current_state$cmp_eq0007> created at line 398.
+    Found 4-bit register for signal <Bit_cpt>.
+    Found 4-bit subtractor for signal <Bit_cpt$addsub0000> created at line 366.
+    Found 16-bit register for signal <Clk_cpt>.
+    Found 16-bit adder for signal <Clk_cpt$addsub0000> created at line 281.
+    Found 15-bit register for signal <Data<15:1>>.
+    Found 1-bit register for signal <iADC_SCK>.
+    Found 16-bit up counter for signal <Int_cpt>.
+    Found 8-bit register for signal <Int_Time>.
+    Found 8-bit adder for signal <Int_Time$add0000> created at line 182.
+    Found 8-bit subtractor for signal <Int_Time$addsub0000> created at line 182.
+    Found 8-bit subtractor for signal <Int_Time$sub0000> created at line 182.
+    Found 1-bit register for signal <iTCD_Clk>.
+    Found 16-bit register for signal <Pix_cpt>.
+    Found 16-bit adder for signal <Pix_cpt$addsub0000> created at line 394.
+    Found 12-bit register for signal <RAMA_Addr>.
+    Found 16-bit register for signal <RAMA_Din>.
+    Found 16-bit adder for signal <RAMA_Din$addsub0000> created at line 375.
+    Found 1-bit register for signal <RAMA_Wr<0>>.
+    Found 12-bit register for signal <RAMB_Addr>.
+    Found 3-bit register for signal <Rx_Bit_Cpt>.
+    Found 3-bit subtractor for signal <Rx_Bit_Cpt$addsub0000> created at line 162.
+    Found 8-bit register for signal <Rx_Data0>.
+    Found 8-bit register for signal <Rx_Data1>.
+    Found 1-bit register for signal <Send_Packet>.
+    Found 1-bit register for signal <Start_Acq>.
+    Found 16-bit register for signal <Tempo_cpt>.
+    Found 16-bit adder for signal <Tempo_cpt$addsub0000> created at line 302.
+    Found 4-bit register for signal <Tx_Bit_Cpt>.
+    Found 4-bit subtractor for signal <Tx_Bit_Cpt$addsub0000> created at line 197.
+    Found 12-bit register for signal <Tx_Byte_Cpt>.
+    Found 12-bit adder for signal <Tx_Byte_Cpt$addsub0000> created at line 220.
+    Found 10-bit register for signal <Tx_Data>.
+    Found 1-bit 10-to-1 multiplexer for signal <Tx_Data$mux0000> created at line 196.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 169 D-type flip-flop(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <IRIS> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 256x64-bit ROM                                        : 2
+# Multipliers                                          : 1
+ 8x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 11
+ 12-bit adder                                          : 1
+ 16-bit adder                                          : 4
+ 3-bit subtractor                                      : 1
+ 4-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 2
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 52
+ 1-bit register                                        : 40
+ 10-bit register                                       : 1
+ 12-bit register                                       : 3
+ 16-bit register                                       : 4
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 1-bit 10-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <Acq_current_state/FSM> on signal <Acq_current_state[1:11]> with one-hot encoding.
+---------------------------------
+ State            | Encoding
+---------------------------------
+ s_idle           | 00000000001
+ s_acq            | 00000000010
+ s_wait_icg_to_sh | 00000000100
+ s_wait_sh        | 00000001000
+ s_wait_icg       | 00000010000
+ s_pix_setup      | 00000100000
+ s_start_conv     | 00001000000
+ s_wait_conv      | 00010000000
+ s_clock_adc      | 00100000000
+ s_get_adc_data   | 01000000000
+ s_complete       | 10000000000
+---------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <FT_current_state/FSM> on signal <FT_current_state[1:11]> with one-hot encoding.
+-----------------------------
+ State        | Encoding
+-----------------------------
+ s_idle       | 00000000001
+ s_read_byte0 | 00000000010
+ s_wait0      | 00000001000
+ s_read_byte1 | 00000010000
+ s_decode     | 00000100000
+ s_read_ram1  | 00000000100
+ s_send_byte1 | 00001000000
+ s_wait_cts1  | 00010000000
+ s_read_ram2  | 00100000000
+ s_send_byte2 | 01000000000
+ s_wait_cts2  | 10000000000
+-----------------------------
+Reading core <../ipcore_dir/RAM.ngc>.
+Loading core <RAM> for timing and area information for instance <Memory>.
+WARNING:Xst:1290 - Hierarchical block <LSBItoa> is unconnected in block <IRIS>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 2
+ 256x64-bit ROM                                        : 2
+# Multipliers                                          : 1
+ 8x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 11
+ 12-bit adder                                          : 1
+ 16-bit adder                                          : 4
+ 3-bit subtractor                                      : 1
+ 4-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 2
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 169
+ Flip-Flops                                            : 169
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 1-bit 10-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <IRIS> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <Tx_Data_0> in Unit <IRIS> is equivalent to the following 5 FFs/Latches, which will be removed : <Tx_Data_3> <Tx_Data_4> <Tx_Data_7> <Tx_Data_8> <Tx_Data_9> 
+Found area constraint ratio of 100 (+ 5) on block IRIS, actual ratio is 10.
+WARNING:Xst:1426 - The value init of the FF/Latch Tx_Data_6 hinder the constant cleaning in the block IRIS.
+   You should achieve better results by setting this init to 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 202
+ Flip-Flops                                            : 202
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : IRIS.ngr
+Top Level Output File Name         : IRIS
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 570
+#      GND                         : 2
+#      INV                         : 8
+#      LUT1                        : 56
+#      LUT2                        : 39
+#      LUT2_D                      : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 58
+#      LUT3_D                      : 4
+#      LUT4                        : 175
+#      LUT4_D                      : 7
+#      LUT4_L                      : 2
+#      MUXCY                       : 99
+#      MUXF5                       : 14
+#      MUXF6                       : 1
+#      VCC                         : 2
+#      XORCY                       : 100
+# FlipFlops/Latches                : 202
+#      FDC                         : 80
+#      FDCE                        : 56
+#      FDE                         : 56
+#      FDP                         : 7
+#      FDPE                        : 3
+# RAMS                             : 4
+#      RAMB16BWE                   : 4
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 12
+#      IBUF                        : 5
+#      OBUF                        : 7
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200avq100-4 
+
+ Number of Slices:                      195  out of   1792    10%  
+ Number of Slice Flip Flops:            202  out of   3584     5%  
+ Number of 4 input LUTs:                352  out of   3584     9%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  12  out of     68    17%  
+ Number of BRAMs:                         4  out of     16    25%  
+ Number of MULT18X18SIOs:                 1  out of     16     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | IBUF+BUFG              | 206   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------+------------------------+-------+
+Control Signal                                                                 | Buffer(FF name)        | Load  |
+-------------------------------------------------------------------------------+------------------------+-------+
+Acq_current_state_FSM_Acst_FSM_inv(Acq_current_state_FSM_Acst_FSM_inv1_INV_0:O)| NONE(ADC_Cnv)          | 146   |
+-------------------------------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.218ns (Maximum Frequency: 108.483MHz)
+   Minimum input arrival time before clock: 6.429ns
+   Maximum output required time after clock: 5.558ns
+   Maximum combinational path delay: 5.816ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 9.218ns (frequency: 108.483MHz)
+  Total number of paths / destination ports: 9603 / 397
+-------------------------------------------------------------------------
+Delay:               9.218ns (Levels of Logic = 5)
+  Source:            Rx_Data0_5 (FF)
+  Destination:       Int_Time_7 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Rx_Data0_5 to Int_Time_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.674  Rx_Data0_5 (Rx_Data0_5)
+     LUT2:I0->O            1   0.648   0.420  Msub_Int_Time_sub0000_xor<5>11 (Int_Time_sub0000<5>)
+     MULT18X18SIO:A5->P6    1   4.086   0.423  Mmult__mult0000 (_mult0000<6>)
+     LUT4:I3->O            1   0.648   0.000  Madd_Int_Time_add0000_lut<6> (Madd_Int_Time_add0000_lut<6>)
+     MUXCY:S->O            0   0.632   0.000  Madd_Int_Time_add0000_cy<6> (Madd_Int_Time_add0000_cy<6>)
+     XORCY:CI->O           1   0.844   0.000  Madd_Int_Time_add0000_xor<7> (Int_Time_add0000<7>)
+     FDCE:D                    0.252          Int_Time_7
+    ----------------------------------------
+    Total                      9.218ns (7.701ns logic, 1.517ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 168 / 130
+-------------------------------------------------------------------------
+Offset:              6.429ns (Levels of Logic = 19)
+  Source:            ADC_Data (PAD)
+  Destination:       RAMA_Din_15 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: ADC_Data to RAMA_Din_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   0.849   1.194  ADC_Data_IBUF (ADC_Data_IBUF)
+     LUT2:I0->O            1   0.648   0.000  Madd_RAMA_Din_addsub0000_lut<0> (Madd_RAMA_Din_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  Madd_RAMA_Din_addsub0000_cy<0> (Madd_RAMA_Din_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<1> (Madd_RAMA_Din_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<2> (Madd_RAMA_Din_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<3> (Madd_RAMA_Din_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<4> (Madd_RAMA_Din_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<5> (Madd_RAMA_Din_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<6> (Madd_RAMA_Din_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<7> (Madd_RAMA_Din_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<8> (Madd_RAMA_Din_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<9> (Madd_RAMA_Din_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<10> (Madd_RAMA_Din_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<11> (Madd_RAMA_Din_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<12> (Madd_RAMA_Din_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<13> (Madd_RAMA_Din_addsub0000_cy<13>)
+     MUXCY:CI->O           0   0.065   0.000  Madd_RAMA_Din_addsub0000_cy<14> (Madd_RAMA_Din_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.844   0.452  Madd_RAMA_Din_addsub0000_xor<15> (RAMA_Din_addsub0000<15>)
+     LUT3:I2->O            1   0.648   0.000  RAMA_Din_mux0001<15>1 (RAMA_Din_mux0001<15>)
+     FDE:D                     0.252          RAMA_Din_15
+    ----------------------------------------
+    Total                      6.429ns (4.783ns logic, 1.646ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            iTCD_Clk (FF)
+  Destination:       TCD_Clk (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: iTCD_Clk to TCD_Clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.591   0.447  iTCD_Clk (iTCD_Clk)
+     OBUF:I->O                 4.520          TCD_Clk_OBUF (TCD_Clk)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.816ns (Levels of Logic = 2)
+  Source:            Clk (PAD)
+  Destination:       FT2232_FSClk (PAD)
+
+  Data Path: Clk to FT2232_FSClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.849   0.447  Clk_IBUF (FT2232_FSClk_OBUF1)
+     OBUF:I->O                 4.520          FT2232_FSClk_OBUF (FT2232_FSClk)
+    ----------------------------------------
+    Total                      5.816ns (5.369ns logic, 0.447ns route)
+                                       (92.3% logic, 7.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.55 secs
+ 
+--> 
+
+Total memory usage is 174184 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

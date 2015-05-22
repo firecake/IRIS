@@ -1,0 +1,4 @@
+vhdl work "C:\IRIS\IRIS\ipcore_dir\RAM.vhd"
+vhdl work "C:\IRIS\IRIS\vhdl\IRIS_Pack.vhd"
+vhdl work "C:\IRIS\IRIS\ItoA.vhd"
+vhdl work "C:\IRIS\IRIS\vhdl\IRISv2.vhd"

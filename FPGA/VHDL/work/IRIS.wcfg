@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/IRIS/IRIS/work/IRIS_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="iris_pack" />
+            <top_module name="iris_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="30" />
+   <wave_markers>
+      <marker time="13137500000" label="" />
+   </wave_markers>
+   <wvobject fp_name="divider16" type="divider">
+      <obj_property name="label">TCD1304</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/tcd_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tcd_clk</obj_property>
+      <obj_property name="ObjectShortName">tcd_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/tcd_icg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tcd_icg</obj_property>
+      <obj_property name="ObjectShortName">tcd_icg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/tcd_sh" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tcd_sh</obj_property>
+      <obj_property name="ObjectShortName">tcd_sh</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider17" type="divider">
+      <obj_property name="label">ADC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/adc_sck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_sck</obj_property>
+      <obj_property name="ObjectShortName">adc_sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/adc_cnv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_cnv</obj_property>
+      <obj_property name="ObjectShortName">adc_cnv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/adc_busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_busy</obj_property>
+      <obj_property name="ObjectShortName">adc_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/adc_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_data</obj_property>
+      <obj_property name="ObjectShortName">adc_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider21" type="divider">
+      <obj_property name="label">FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/acq_current_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">acq_current_state</obj_property>
+      <obj_property name="ObjectShortName">acq_current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/pix_cpt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pix_cpt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pix_cpt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider16" type="divider">
+      <obj_property name="label">RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/rama_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rama_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rama_addr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/rama_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rama_dout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rama_dout[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/rama_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rama_din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rama_din[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/rama_wr[0]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">rama_wr[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/int_time" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">int_time[7:0]</obj_property>
+      <obj_property name="ObjectShortName">int_time[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/int_cpt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">int_cpt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">int_cpt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/start_acq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start_acq</obj_property>
+      <obj_property name="ObjectShortName">start_acq</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider26" type="divider">
+      <obj_property name="label">FT2232</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/ft2232_fsclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ft2232_fsclk</obj_property>
+      <obj_property name="ObjectShortName">ft2232_fsclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/ft2232_fsdo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ft2232_fsdo</obj_property>
+      <obj_property name="ObjectShortName">ft2232_fsdo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/ft2232_fsdi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ft2232_fsdi</obj_property>
+      <obj_property name="ObjectShortName">ft2232_fsdi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/ft2232_fscts" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ft2232_fscts</obj_property>
+      <obj_property name="ObjectShortName">ft2232_fscts</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/ft_current_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ft_current_state</obj_property>
+      <obj_property name="ObjectShortName">ft_current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/uut/rx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/ft_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ft_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ft_data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iris_tb/ft_data_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ft_data_ready</obj_property>
+      <obj_property name="ObjectShortName">ft_data_ready</obj_property>
+   </wvobject>
+</wave_config>

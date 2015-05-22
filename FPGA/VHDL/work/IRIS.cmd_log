@@ -1,0 +1,133 @@
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+xst -intstyle ise -ifn "C:/IRIS/IRIS/work/IRIS.xst" -ofn "C:/IRIS/IRIS/work/IRIS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 
+bitgen -intstyle ise -f IRIS.ut IRIS.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc C:/IRIS/IRIS/IRIS.ucf -p xc3s200a-vq100-4 IRIS.ngc IRIS.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o IRIS_map.ncd IRIS.ngd IRIS.pcf 
+par -w -intstyle ise -ol high -t 1 IRIS_map.ncd IRIS.ncd IRIS.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml IRIS.twx IRIS.ncd -o IRIS.twr IRIS.pcf 

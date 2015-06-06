@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-21T17:42:01</DateModified>
+  <DateModified>2015-06-06T23:18:45</DateModified>
   <ModuleName>IRIS</ModuleName>
-  <SummaryTimeStamp>2015-05-21T15:24:04</SummaryTimeStamp>
-  <SavedFilePath>C:/IRIS/IRIS/iseconfig/IRIS.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/IRIS/IRIS/work\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2015-06-06T22:59:28</SummaryTimeStamp>
+  <SavedFilePath>C:/IRIS/iseconfig/IRIS.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/IRIS/work\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-01T21:40:35</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
   <viewgroup label="Design Overview" >
-   <view inputState="Unknown" program="implementation" ShowPartitionData="false" type="FPGASummary" file="IRIS_summary.html" label="Summary" ExpandClockNets="true" ExpandWarnings="false" >
+   <view inputState="Unknown" program="implementation" ShowPartitionData="false" type="FPGASummary" file="IRIS_summary.html" label="Summary" ExpandClockNets="false" ExpandWarnings="true" >
     <toc-item title="Design Overview" target="Design Overview" />
     <toc-item title="Design Utilization Summary" target="Design Utilization Summary" />
     <toc-item title="Performance Summary" target="Performance Summary" />

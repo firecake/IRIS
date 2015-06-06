@@ -4,10 +4,6 @@
 void MainWindow::paintEvent(QPaintEvent *)
 {
 
-    //
-    //
-    //
-
     w=ui->plot1->size().width() ;
     h=75;
 
@@ -39,9 +35,9 @@ void MainWindow::paintEvent(QPaintEvent *)
 
     //ui->plot1->graph(0)->setBrush(*b);
     ui->plot1->graph(0)->setPen(*pen0);
-    ui->plot1->graph(1)->setPen(*pen1);
-    ui->plot1->graph(2)->setPen(*pen2);
-    ui->plot1->graph(3)->setPen(*pen3);
+    //ui->plot1->graph(1)->setPen(*pen1);
+    //ui->plot1->graph(2)->setPen(*pen2);
+    //ui->plot1->graph(3)->setPen(*pen3);
 
     //
     // Build spectrogram
@@ -82,7 +78,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     Com = new QSerialPort();
 
-    Com->setPortName("/dev/tty.usbmodem1661");
+    //Com->setPortName("/dev/tty.usbmodem1661");
+    Com->setPortName("/dev/tty.usbserial-FTYT8TONA");
     Com->setBaudRate(460800);
     Com->setDataBits(QSerialPort::Data8);
     Com->setParity(QSerialPort::NoParity);
@@ -100,17 +97,20 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // create graph and assign data to it:
     ui->plot1->addGraph();
-    ui->plot1->addGraph();
-    ui->plot1->addGraph();
-    ui->plot1->addGraph();
+    //ui->plot1->addGraph();
+    //ui->plot1->addGraph();
+    //ui->plot1->addGraph();
 
     //ui->plot1->graph(0)->setData(x, y);
     // give the axes some labels:
-    //ui->plot1->xAxis->setLabel("nm");
+    ui->plot1->xAxis->setLabel("nm");
     //ui->plot1->yAxis->setLabel("y");
     // set axes ranges, so we see all data:
     //ui->plot1->xAxis->setRange(STARTF, STOPF);
-    ui->plot1->xAxis->setRange(0, 3400);
+    ui->plot1->xAxis->setRange(0, 1200);
+
+    for(int i=0;i<4096;i++)
+        x.append( (double) i );
 
     QVector<double> ticks_label;
 
@@ -118,7 +118,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //ui->plot1->xAxis->setAutoTicks(false);
     //ui->plot1->xAxis->setTickVector(ticks_label);
-    ui->plot1->yAxis->setRange(0, 2500);
+    ui->plot1->yAxis->setRange(0,30000);
 
     //ui->plot1->adjustSize();
 
@@ -136,12 +136,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_2_clicked()
-{
-
-
-}
-
 void MainWindow::on_toolButton_clicked()
 {
     // Measured visible spectrum
@@ -157,24 +151,18 @@ void MainWindow::on_toolButton_clicked()
 
     ui->label_2->setPixmap(*Map);
 
-    // Plot spectrum
-
-    //ui->plot1->replot();
-
 }
 
-void MainWindow::on_toolButton_2_clicked()
-{
-
-}
 
 void MainWindow::capture()
 {
 
     int len;
 
-    Tc[0] = 0xAA;
-    Tc[1] = 0x01;
+    Tc[0] = 0x00;
+
+    for(int i=0;i<MAX_TM_SIZE;i++)
+        Tm[i]=0xAA;
 
     Com->write((char *)Tc,1);
 
@@ -182,24 +170,28 @@ void MainWindow::capture()
 
     if ( len > 0 )
     {
-        //qDebug() << "----------------------------";
-        //qDebug() << len;
-
-        x.clear();
+        //x.clear();
         y.clear();
-        for(int i=0;i<len/2;i++)
+        for(int i=0;i<len/4;i++)
         {
-            x.append( (double) i );
-            y.append( 2047.0 - (double) ( ( ( Tm[2*i] << 8 ) | Tm[2*i+1] ) ) ) ;
+            //x.append( (double) i );
+            y.append(   65535 - 7000 - (double) ( ( Tm[4*i+0] + ( Tm[4*i+1] << 8 ) + ( Tm[4*i+2] << 16 ) + ( Tm[4*i+3] << 24 )  ) ) / ( double ) ( Tc[0] + 1 )) ;
         }
 
-        //for(int i=0;i<1000;i++)
-        //    qDebug() << i << " " << Tm[2*i+1] << " " << Tm[2*i] << " " << y[i] ;
-
-        //ui->plot1->clearGraphs();
-        //ui->plot1->graph(0)->clearData();
         ui->plot1->graph(0)->setData(x,y);
         ui->plot1->replot();
     }
 }
 
+void MainWindow::on_pushButton_clicked()
+{
+        Tc[0] = 0x04;
+        Com->write((char *)Tc,1);
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    int len = Com->read((char *)Tm, MAX_TM_SIZE);
+
+    qDebug() << len;
+}

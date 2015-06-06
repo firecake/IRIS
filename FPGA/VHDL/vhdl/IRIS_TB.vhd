@@ -47,7 +47,6 @@ ARCHITECTURE behavior OF IRIS_TB IS
  
     COMPONENT IRIS
     PORT(
-         Reset_n : IN  std_logic;
          Clk : IN  std_logic;
          FT2232_FSClk : OUT  std_logic;
          FT2232_FSDO : IN  std_logic;
@@ -55,7 +54,6 @@ ARCHITECTURE behavior OF IRIS_TB IS
          FT2232_FSCTS : IN  std_logic;
          ADC_Sck : OUT  std_logic;
          ADC_Cnv : OUT  std_logic;
-         ADC_Busy : IN  std_logic;
          ADC_Data : IN  std_logic;
          TCD_Clk : out  std_logic;
          TCD_Icg : OUT  std_logic;
@@ -65,7 +63,6 @@ ARCHITECTURE behavior OF IRIS_TB IS
     
 
    --Inputs
-   signal Reset_n : std_logic := '0';
    signal Clk : std_logic := '0';
    signal FT2232_FSDO : std_logic := '0';
    signal FT2232_FSCTS : std_logic := '0';
@@ -98,7 +95,6 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: IRIS PORT MAP (
-          Reset_n => Reset_n,
           Clk => Clk,
           FT2232_FSClk => FT2232_FSClk,
           FT2232_FSDO => FT2232_FSDO,
@@ -106,7 +102,6 @@ BEGIN
           FT2232_FSCTS => FT2232_FSCTS,
           ADC_Sck => ADC_Sck,
           ADC_Cnv => ADC_Cnv,
-          ADC_Busy => ADC_Busy,
           ADC_Data => ADC_Data,
           TCD_Clk => TCD_Clk,
           TCD_Icg => TCD_Icg,
@@ -117,11 +112,12 @@ BEGIN
 	variable l : line;
 	begin
 		
+		FT_Data_Ready <= '0';
 		FT_Data <= X"00";
 		FT2232_FSDO <= '1';
 		FT2232_FSCTS <= '0';
 	
-	   wait for 500 us;
+	   wait for 1 ms;
 		
 	   FT_Data <= X"00";
 		wait for 1 ns;
@@ -136,9 +132,9 @@ BEGIN
 			writeline(output,l);
 		end loop;
 		
-		wait for 2 ms;
+		wait for 4 ms;
 		
-	   FT_Data <= X"02";
+	   FT_Data <= "01000000";
 		wait for 1ns;
 	   FT_Send_Byte ( FT_Data, FT2232_FSClk, FT2232_FSDO );
 		
@@ -165,7 +161,6 @@ BEGIN
    end process;
 
    -- Stimulus process
-	Reset_n <= '0', '1' after 100ns;
 
    -- Clock process definitions
    ADC_process :process

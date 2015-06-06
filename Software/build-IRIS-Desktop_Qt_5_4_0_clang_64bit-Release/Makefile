@@ -168,6 +168,7 @@ DIST          = /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/spec_pre.p
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/qt_config.prf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/macx-clang/qmake.conf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/spec_post.prf \
+		../IRIS/.qmake.stash \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/exclusive_builds.prf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/default_pre.prf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -342,6 +343,7 @@ Makefile: ../IRIS/IRIS.pro /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/macx-cla
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/qt_config.prf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/macx-clang/qmake.conf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/exclusive_builds.prf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/default_pre.prf \
 		/Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -479,6 +481,7 @@ Makefile: ../IRIS/IRIS.pro /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/macx-cla
 /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/qt_config.prf:
 /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/macx-clang/qmake.conf:
 /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/exclusive_builds.prf:
 /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/default_pre.prf:
 /Users/damienrambaud/Qt/5.4/clang_64/mkspecs/features/mac/default_pre.prf:

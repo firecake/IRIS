@@ -12,22 +12,35 @@ use IEEE.STD_LOGIC_1164.all;
 
 package IRIS_Pack is
 
+attribute box_type : string;
+
 constant NB_PIXELS : integer := 3694;
 
     component RAM
     port(
-         clka : IN  std_logic;
-         wea : IN  std_logic_vector(0 downto 0);
-         addra : IN  std_logic_vector(11 downto 0);
-         dina : IN  std_logic_vector(15 downto 0);
-         douta : OUT  std_logic_vector(15 downto 0);
-         clkb : IN  std_logic;
-         web : IN  std_logic_vector(0 downto 0);
-         addrb : IN  std_logic_vector(11 downto 0);
-         dinb : IN  std_logic_vector(15 downto 0);
-         doutb : OUT  std_logic_vector(15 downto 0)
+			 clka : IN STD_LOGIC;
+			 wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+			 addra : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+			 dina : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+			 douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+			 clkb : IN STD_LOGIC;
+			 web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+			 addrb : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+			 dinb : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+			 doutb : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
         );
     end component;
+	
+	attribute box_type of RAM : COMPONENT IS "black_box";
+	
+	component Clk_Manager
+	port(
+		CLKIN_IN : IN std_logic;          
+		CLKIN_IBUFG_OUT : OUT std_logic;
+		CLK0_OUT : OUT std_logic;
+		LOCKED_OUT : OUT std_logic
+		);
+	end component;
 	
 	component ItoA     
 	Port ( I : in  STD_LOGIC_VECTOR (7 downto 0);

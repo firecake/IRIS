@@ -1,4 +1,21 @@
 
 #Created by Constraints Editor (xc3s200a-vq100-4) - 2015/05/02
+
+NET "Clk"				LOC = "P83";
+
+NET "FT2232_FSClk"	LOC = "P89";
+NET "FT2232_FSDO"		LOC = "P88";
+NET "FT2232_FSDI"		LOC = "P90";
+NET "FT2232_FSCTS"	LOC = "P86";
+
+NET "ADC_Sck"			LOC = "P4";
+NET "ADC_Cnv"			LOC = "P6";
+NET "ADC_Data"			LOC = "P3";
+
+NET "TCD_Clk"			LOC = "P15";
+NET "TCD_Icg"			LOC = "P13";
+NET "TCD_Sh"			LOC = "P16";
+
 NET "Clk" TNM_NET = Clk;
+NET "FT2232_FSClk" TNM_NET = Clk;
 TIMESPEC TS_Clk = PERIOD "Clk" 25 ns HIGH 50%;

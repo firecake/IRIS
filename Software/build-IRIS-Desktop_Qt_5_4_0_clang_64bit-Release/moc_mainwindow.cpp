@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[6];
-    char stringdata[90];
+    char stringdata[88];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,16 +30,16 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 23), // "on_pushButton_2_clicked"
-QT_MOC_LITERAL(2, 35, 0), // ""
-QT_MOC_LITERAL(3, 36, 21), // "on_toolButton_clicked"
-QT_MOC_LITERAL(4, 58, 23), // "on_toolButton_2_clicked"
-QT_MOC_LITERAL(5, 82, 7) // "capture"
+QT_MOC_LITERAL(1, 11, 21), // "on_toolButton_clicked"
+QT_MOC_LITERAL(2, 33, 0), // ""
+QT_MOC_LITERAL(3, 34, 7), // "capture"
+QT_MOC_LITERAL(4, 42, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(5, 64, 23) // "on_pushButton_2_clicked"
 
     },
-    "MainWindow\0on_pushButton_2_clicked\0\0"
-    "on_toolButton_clicked\0on_toolButton_2_clicked\0"
-    "capture"
+    "MainWindow\0on_toolButton_clicked\0\0"
+    "capture\0on_pushButton_clicked\0"
+    "on_pushButton_2_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -76,10 +76,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         MainWindow *_t = static_cast<MainWindow *>(_o);
         switch (_id) {
-        case 0: _t->on_pushButton_2_clicked(); break;
-        case 1: _t->on_toolButton_clicked(); break;
-        case 2: _t->on_toolButton_2_clicked(); break;
-        case 3: _t->capture(); break;
+        case 0: _t->on_toolButton_clicked(); break;
+        case 1: _t->capture(); break;
+        case 2: _t->on_pushButton_clicked(); break;
+        case 3: _t->on_pushButton_2_clicked(); break;
         default: ;
         }
     }

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/IRIS/IRIS/work/IRIS_TB_isim_beh.exe" -prj "C:/IRIS/IRIS/work/IRIS_TB_beh.prj" "work.IRIS_TB" 
+-intstyle "ise" -incremental -o "C:/IRIS/work/IRIS_TB_isim_beh.exe" -prj "C:/IRIS/work/IRIS_TB_beh.prj" "work.IRIS_TB" 

@@ -3,18 +3,18 @@ User Configuration
 -------------------------------------
 Algorithm				:	Minimum_Area
 Memory Type				:	True_Dual_Port_RAM
-Port A Read Width		:	16
-Port B Read Width		:	16
-Port A Write Width		:	16
-Port B Write Width		:	16
+Port A Read Width		:	32
+Port B Read Width		:	32
+Port A Write Width		:	32
+Port B Write Width		:	32
 Memory Depth			:	4096
 --------------------------------------------------------------
 
-Block RAM resource(s) (18K BRAMs)		: 4
+Block RAM resource(s) (18K BRAMs)		: 8
 --------------------------------------------------------------
 Clock A Frequency		:  100
 Port A Enable Rate		:  100
 Port A Write Rate		:  50
 ----------------------------------------------------------
-Estimated Power for IP : 20.801696 mW
+Estimated Power for IP : 41.603392 mW
 ----------------------------------------------------------

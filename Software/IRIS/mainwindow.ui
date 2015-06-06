@@ -111,15 +111,16 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QToolButton" name="toolButton_3">
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>64</height>
-          </size>
-         </property>
+        <widget class="QPushButton" name="pushButton">
          <property name="text">
-          <string>Start acq.</string>
+          <string>Write</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Read</string>
          </property>
         </widget>
        </item>

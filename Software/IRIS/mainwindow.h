@@ -15,7 +15,7 @@
 #define STOPF  850
 
 #define TC_SIZE 4
-#define MAX_TM_SIZE 8192
+#define MAX_TM_SIZE ( 4096 * 8 )
 
 namespace Ui {
 class MainWindow;
@@ -30,10 +30,12 @@ public:
     ~MainWindow();
     
 private slots:
-    void on_pushButton_2_clicked();
     void on_toolButton_clicked();
-    void on_toolButton_2_clicked();
     void capture();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 protected:
     void paintEvent(QPaintEvent *);

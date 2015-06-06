@@ -20,6 +20,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolButton>
@@ -43,7 +44,8 @@ public:
     QSpacerItem *horizontalSpacer;
     QGroupBox *groupBox;
     QVBoxLayout *verticalLayout;
-    QToolButton *toolButton_3;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
     QToolButton *toolButton_2;
     QToolButton *toolButton;
     QComboBox *CameraCombo;
@@ -120,11 +122,15 @@ public:
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        toolButton_3 = new QToolButton(groupBox);
-        toolButton_3->setObjectName(QStringLiteral("toolButton_3"));
-        toolButton_3->setMinimumSize(QSize(100, 64));
+        pushButton = new QPushButton(groupBox);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
 
-        verticalLayout->addWidget(toolButton_3);
+        verticalLayout->addWidget(pushButton);
+
+        pushButton_2 = new QPushButton(groupBox);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+
+        verticalLayout->addWidget(pushButton_2);
 
         toolButton_2 = new QToolButton(groupBox);
         toolButton_2->setObjectName(QStringLiteral("toolButton_2"));
@@ -162,7 +168,8 @@ public:
         groupSpectrogram->setTitle(QApplication::translate("MainWindow", "Spectrogram", 0));
         label_2->setText(QApplication::translate("MainWindow", "TextLabel", 0));
         groupBox->setTitle(QApplication::translate("MainWindow", "Commands", 0));
-        toolButton_3->setText(QApplication::translate("MainWindow", "Start acq.", 0));
+        pushButton->setText(QApplication::translate("MainWindow", "Write", 0));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Read", 0));
         toolButton_2->setText(QApplication::translate("MainWindow", "Export", 0));
         toolButton->setText(QApplication::translate("MainWindow", "...", 0));
     } // retranslateUi

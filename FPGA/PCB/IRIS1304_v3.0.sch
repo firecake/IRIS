@@ -9717,6 +9717,12 @@ Low profile connectors, straight&lt;p&gt;
 <part name="SV1" library="con-harting-ml" deviceset="ML16" device=""/>
 <part name="SV2" library="con-harting-ml" deviceset="ML16" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="GND31" library="IRIS lib v1.0" deviceset="TEST" device="">
+<attribute name="MF" value="ITT CANNON"/>
+<attribute name="MPN" value="001-1007-040FB9"/>
+<attribute name="OC_FARNELL" value="1347797"/>
+</part>
+<part name="GND32" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10303,6 +10309,12 @@ Low profile connectors, straight&lt;p&gt;
 </instance>
 <instance part="SV1" gate="1" x="-99.06" y="73.66"/>
 <instance part="GND25" gate="1" x="-88.9" y="58.42"/>
+<instance part="GND31" gate="G$1" x="30.48" y="53.34">
+<attribute name="OC_FARNELL" x="30.48" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="30.48" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="30.48" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND32" gate="1" x="30.48" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -10380,6 +10392,8 @@ Low profile connectors, straight&lt;p&gt;
 <junction x="-86.36" y="-55.88"/>
 <pinref part="C81" gate="G$1" pin="2"/>
 <wire x1="-78.74" y1="-55.88" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-55.88"/>
+<junction x="-139.7" y="-55.88"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$3" pin="IO_L02P_2/M2"/>
@@ -10475,6 +10489,10 @@ Low profile connectors, straight&lt;p&gt;
 <junction x="-88.9" y="66.04"/>
 <junction x="-88.9" y="63.5"/>
 </segment>
+<segment>
+<pinref part="GND31" gate="G$1" pin="P$1"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VCC12" class="0">
 <segment>
@@ -10541,6 +10559,8 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="-76.2" y1="-48.26" x2="-86.36" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="-86.36" y="-48.26"/>
 <wire x1="-76.2" y1="-48.26" x2="-86.36" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-48.26"/>
+<junction x="-139.7" y="-48.26"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="VCC"/>
@@ -11503,35 +11523,56 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <pinref part="IC2" gate="G$1" pin="ADBUS7/RI#/GPIOL3"/>
 <pinref part="SV2" gate="1" pin="7"/>
-<wire x1="299.72" y1="175.26" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="175.26" x2="304.8" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="175.26" x2="304.8" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="165.1" x2="271.78" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="165.1" x2="271.78" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="167.64" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ADBUS6/DCD#/GPIOL2"/>
 <pinref part="SV2" gate="1" pin="8"/>
-<wire x1="284.48" y1="175.26" x2="259.08" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="175.26" x2="281.94" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="175.26" x2="281.94" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="187.96" x2="271.78" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="187.96" x2="271.78" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="170.18" x2="259.08" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ADBUS5/DSR#/GPIOL1"/>
 <pinref part="SV2" gate="1" pin="9"/>
-<wire x1="299.72" y1="177.8" x2="259.08" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="177.8" x2="307.34" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="177.8" x2="307.34" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="193.04" x2="297.18" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="193.04" x2="297.18" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="203.2" x2="266.7" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="203.2" x2="266.7" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="172.72" x2="259.08" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ADBUS4/DTR#/GPIOL0"/>
 <pinref part="SV2" gate="1" pin="10"/>
-<wire x1="284.48" y1="177.8" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="177.8" x2="279.4" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="177.8" x2="274.32" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="177.8" x2="274.32" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="175.26" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ADBUS3/CTS#/TMS/CS"/>
 <pinref part="SV2" gate="1" pin="11"/>
-<wire x1="299.72" y1="180.34" x2="259.08" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="180.34" x2="302.26" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="180.34" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="200.66" x2="269.24" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="200.66" x2="269.24" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="177.8" x2="259.08" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -11558,10 +11599,10 @@ Low profile connectors, straight&lt;p&gt;
 <net name="N$29" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ACBUS0/TXDEN/GPIOH0"/>
-<wire x1="259.08" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="162.56" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="162.56" x2="312.42" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="162.56" x2="312.42" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="5"/>
-<wire x1="276.86" y1="172.72" x2="299.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="172.72" x2="299.72" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -11576,28 +11617,28 @@ Low profile connectors, straight&lt;p&gt;
 <net name="N$31" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ACBUS1/GPIOH1"/>
-<wire x1="259.08" y1="160.02" x2="307.34" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="160.02" x2="307.34" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="160.02" x2="279.4" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="160.02" x2="279.4" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="6"/>
-<wire x1="307.34" y1="172.72" x2="284.48" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="172.72" x2="284.48" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ACBUS2/GPIOH2"/>
-<wire x1="259.08" y1="157.48" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="157.48" x2="279.4" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="157.48" x2="302.26" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="157.48" x2="302.26" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="3"/>
-<wire x1="279.4" y1="170.18" x2="299.72" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="170.18" x2="299.72" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ACBUS3/RXLED#/GPIOH3"/>
-<wire x1="259.08" y1="154.94" x2="312.42" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="154.94" x2="312.42" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="154.94" x2="274.32" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="154.94" x2="274.32" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="4"/>
-<wire x1="312.42" y1="170.18" x2="284.48" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="170.18" x2="284.48" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">

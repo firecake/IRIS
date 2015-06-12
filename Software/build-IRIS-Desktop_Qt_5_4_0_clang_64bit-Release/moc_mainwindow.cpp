@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[6];
-    char stringdata[88];
+    QByteArrayData data[9];
+    char stringdata[103];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,16 +30,19 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 21), // "on_toolButton_clicked"
-QT_MOC_LITERAL(2, 33, 0), // ""
-QT_MOC_LITERAL(3, 34, 7), // "capture"
-QT_MOC_LITERAL(4, 42, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(5, 64, 23) // "on_pushButton_2_clicked"
+QT_MOC_LITERAL(1, 11, 7), // "capture"
+QT_MOC_LITERAL(2, 19, 0), // ""
+QT_MOC_LITERAL(3, 20, 17), // "mouseReleaseEvent"
+QT_MOC_LITERAL(4, 38, 12), // "QMouseEvent*"
+QT_MOC_LITERAL(5, 51, 5), // "event"
+QT_MOC_LITERAL(6, 57, 10), // "closeEvent"
+QT_MOC_LITERAL(7, 68, 12), // "QCloseEvent*"
+QT_MOC_LITERAL(8, 81, 21) // "on_toolButton_clicked"
 
     },
-    "MainWindow\0on_toolButton_clicked\0\0"
-    "capture\0on_pushButton_clicked\0"
-    "on_pushButton_2_clicked"
+    "MainWindow\0capture\0\0mouseReleaseEvent\0"
+    "QMouseEvent*\0event\0closeEvent\0"
+    "QCloseEvent*\0on_toolButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -58,14 +61,14 @@ static const uint qt_meta_data_MainWindow[] = {
 
  // slots: name, argc, parameters, tag, flags
        1,    0,   34,    2, 0x08 /* Private */,
-       3,    0,   35,    2, 0x08 /* Private */,
-       4,    0,   36,    2, 0x08 /* Private */,
-       5,    0,   37,    2, 0x08 /* Private */,
+       3,    1,   35,    2, 0x08 /* Private */,
+       6,    1,   38,    2, 0x08 /* Private */,
+       8,    0,   41,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 4,    5,
+    QMetaType::Void, 0x80000000 | 7,    5,
     QMetaType::Void,
 
        0        // eod
@@ -76,14 +79,13 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         MainWindow *_t = static_cast<MainWindow *>(_o);
         switch (_id) {
-        case 0: _t->on_toolButton_clicked(); break;
-        case 1: _t->capture(); break;
-        case 2: _t->on_pushButton_clicked(); break;
-        case 3: _t->on_pushButton_2_clicked(); break;
+        case 0: _t->capture(); break;
+        case 1: _t->mouseReleaseEvent((*reinterpret_cast< QMouseEvent*(*)>(_a[1]))); break;
+        case 2: _t->closeEvent((*reinterpret_cast< QCloseEvent*(*)>(_a[1]))); break;
+        case 3: _t->on_toolButton_clicked(); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 const QMetaObject MainWindow::staticMetaObject = {

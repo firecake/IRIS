@@ -33,7 +33,7 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="1" rowspan="3">
+    <item row="0" column="0" rowspan="2">
      <widget class="QGroupBox" name="groupSpectrogram">
       <property name="minimumSize">
        <size>
@@ -68,20 +68,33 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_2">
+          <widget class="QToolButton" name="toolButton_2">
            <property name="minimumSize">
             <size>
-             <width>900</width>
-             <height>0</height>
+             <width>64</width>
+             <height>64</height>
             </size>
            </property>
            <property name="text">
-            <string>TextLabel</string>
+            <string>Export</string>
            </property>
           </widget>
          </item>
          <item>
-          <spacer name="horizontalSpacer">
+          <widget class="QToolButton" name="toolButton_3">
+           <property name="minimumSize">
+            <size>
+             <width>64</width>
+             <height>64</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Autoscale</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -93,65 +106,92 @@
            </property>
           </spacer>
          </item>
+         <item>
+          <widget class="QToolButton" name="toolButton">
+           <property name="minimumSize">
+            <size>
+             <width>64</width>
+             <height>64</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Calibrate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_c0">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Cursor 1 </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_x0">
+           <property name="text">
+            <string>1294</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="SBa">
+           <property name="suffix">
+            <string> nm</string>
+           </property>
+           <property name="minimum">
+            <double>200.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>1200.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>440.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_c1">
+           <property name="text">
+            <string>Cursor2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_x1">
+           <property name="text">
+            <string>3895</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="sbB">
+           <property name="suffix">
+            <string> nm</string>
+           </property>
+           <property name="minimum">
+            <double>200.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>1200.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>660.000000000000000</double>
+           </property>
+          </widget>
+         </item>
         </layout>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="0" column="0" rowspan="3">
-     <widget class="QGroupBox" name="groupBox">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="title">
-       <string>Commands</string>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>Write</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="text">
-          <string>Read</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="toolButton_2">
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>64</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Export</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QToolButton" name="toolButton">
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>64</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>...</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="CameraCombo"/>
        </item>
       </layout>
      </widget>
@@ -159,6 +199,33 @@
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFichier"/>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionXfxcb">
+   <property name="text">
+    <string>xfxcb</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>

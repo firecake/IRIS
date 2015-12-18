@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9709,7 +9709,7 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="OC_FARNELL" value="1347797"/>
 </part>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="TDO1" library="IRIS lib v1.0" deviceset="TEST" device="">
+<part name="TDO" library="IRIS lib v1.0" deviceset="TEST" device="">
 <attribute name="MF" value="ITT CANNON"/>
 <attribute name="MPN" value="001-1007-040FB9"/>
 <attribute name="OC_FARNELL" value="1347797"/>
@@ -9723,6 +9723,39 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="OC_FARNELL" value="1347797"/>
 </part>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
+<part name="U1" library="IRIS" deviceset="M93C56-WMN6P" device="">
+<attribute name="MF" value="STMICROELECTRONICS"/>
+</part>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="10K">
+<attribute name="MF" value="TE CONNECTIVITY / NEOHM"/>
+<attribute name="MPN" value="CPF0603F10KC1"/>
+<attribute name="OC_FARNELL" value="1527581"/>
+</part>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="10K">
+<attribute name="MF" value="TE CONNECTIVITY / NEOHM"/>
+<attribute name="MPN" value="CPF0603F10KC1"/>
+<attribute name="OC_FARNELL" value="1527581"/>
+</part>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="10K">
+<attribute name="MF" value="TE CONNECTIVITY / NEOHM"/>
+<attribute name="MPN" value="CPF0603F10KC1"/>
+<attribute name="OC_FARNELL" value="1527581"/>
+</part>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="2K2">
+<attribute name="MF" value="PANASONIC ELECTRONIC COMPONENTS"/>
+<attribute name="MPN" value="ERJP03F2201V"/>
+<attribute name="OC_FARNELL" value="1750676"/>
+</part>
+<part name="P+6" library="supply1" deviceset="VCC" device="" value="VCC33"/>
+<part name="P+7" library="supply1" deviceset="VCC" device="" value="VCC33"/>
+<part name="P+8" library="supply1" deviceset="VCC" device="" value="VCC33"/>
+<part name="GND33" library="supply1" deviceset="GND" device=""/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="100nF">
+<attribute name="MF" value="AVX"/>
+<attribute name="MPN" value="06033G104ZAT2A"/>
+<attribute name="OC_FARNELL" value="317287"/>
+</part>
+<part name="GND34" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10302,7 +10335,7 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="MF" x="109.22" y="0" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="109.22" y="0" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TDO1" gate="G$1" x="149.86" y="104.14">
+<instance part="TDO" gate="G$1" x="149.86" y="104.14">
 <attribute name="OC_FARNELL" x="149.86" y="104.14" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="149.86" y="104.14" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="149.86" y="104.14" size="1.778" layer="96" display="off"/>
@@ -10360,10 +10393,8 @@ Low profile connectors, straight&lt;p&gt;
 </segment>
 <segment>
 <pinref part="C76" gate="G$1" pin="2"/>
-<wire x1="-137.16" y1="-55.88" x2="-129.54" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-129.54" y="-55.88"/>
 <pinref part="C74" gate="G$1" pin="2"/>
-<wire x1="-129.54" y1="-55.88" x2="-137.16" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="-55.88" x2="-137.16" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="C73" gate="G$1" pin="2"/>
 <pinref part="C72" gate="G$1" pin="2"/>
@@ -10371,23 +10402,14 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="-106.68" y1="-55.88" x2="-111.76" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-106.68" y="-55.88"/>
 <pinref part="C70" gate="G$1" pin="2"/>
-<wire x1="-111.76" y1="-55.88" x2="-116.84" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="-55.88" x2="-116.84" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="-55.88" x2="-119.38" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="GND53" gate="1" pin="GND"/>
 <junction x="-111.76" y="-55.88"/>
 <wire x1="-137.16" y1="-55.88" x2="-119.38" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-119.38" y="-55.88"/>
-<wire x1="-78.74" y1="-55.88" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="-55.88" x2="-78.74" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="-55.88" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="-55.88" x2="-86.36" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-96.52" y="-55.88"/>
-<wire x1="-78.74" y1="-55.88" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="C78" gate="G$1" pin="2"/>
-<wire x1="-76.2" y1="-55.88" x2="-78.74" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="-55.88" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-55.88" x2="-78.74" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="-55.88" x2="-86.36" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="-55.88" x2="-78.74" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-86.36" y="-55.88"/>
 <pinref part="C81" gate="G$1" pin="2"/>
@@ -10690,7 +10712,6 @@ Low profile connectors, straight&lt;p&gt;
 <label x="71.12" y="93.98" size="1.778" layer="95"/>
 <pinref part="U$3" gate="JTAG" pin="TMS"/>
 <pinref part="TMS" gate="G$1" pin="P$1"/>
-<wire x1="50.8" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
 <junction x="68.58" y="93.98"/>
@@ -10778,7 +10799,7 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="U8" gate="A" pin="TDO"/>
 <wire x1="132.08" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
 <label x="134.62" y="104.14" size="1.778" layer="95"/>
-<pinref part="TDO1" gate="G$1" pin="P$1"/>
+<pinref part="TDO" gate="G$1" pin="P$1"/>
 <wire x1="139.7" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10842,11 +10863,8 @@ Low profile connectors, straight&lt;p&gt;
 <net name="TDII" class="0">
 <segment>
 <pinref part="U8" gate="A" pin="TDI"/>
-<wire x1="96.52" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <label x="88.9" y="96.52" size="1.778" layer="95"/>
-<wire x1="50.8" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="JTAG" pin="TDO"/>
 </segment>
 </net>
@@ -10960,6 +10978,27 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="U$3" gate="G$3" pin="IO_L07_2/D4"/>
 <wire x1="-106.68" y1="63.5" x2="-129.54" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="63.5" x2="-137.16" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PROM_C" class="0">
+<segment>
+<pinref part="U$3" gate="G$2" pin="IO_L05P_1"/>
+<wire x1="-129.54" y1="121.92" x2="-114.3" y2="121.92" width="0.1524" layer="91"/>
+<label x="-116.84" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROM_D" class="0">
+<segment>
+<pinref part="U$3" gate="G$2" pin="IO_L06N_1"/>
+<wire x1="-129.54" y1="119.38" x2="-114.3" y2="119.38" width="0.1524" layer="91"/>
+<label x="-116.84" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROM_S" class="0">
+<segment>
+<pinref part="U$3" gate="G$2" pin="IO_L06P_1"/>
+<wire x1="-129.54" y1="116.84" x2="-114.3" y2="116.84" width="0.1524" layer="91"/>
+<label x="-116.84" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -11156,6 +11195,7 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="309.88" y1="203.2" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="203.2" x2="302.26" y2="205.74" width="0.1524" layer="91"/>
+<junction x="340.36" y="203.2"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -11339,6 +11379,7 @@ Low profile connectors, straight&lt;p&gt;
 <label x="345.44" y="215.9" size="1.778" layer="95"/>
 <wire x1="332.74" y1="215.9" x2="340.36" y2="215.9" width="0.1524" layer="91"/>
 <junction x="332.74" y="215.9"/>
+<junction x="340.36" y="215.9"/>
 </segment>
 <segment>
 <pinref part="L3" gate="G$1" pin="2"/>
@@ -11652,7 +11693,170 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 </nets>
 </sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="U1" gate="A" x="114.3" y="63.5">
+<attribute name="MF" x="114.3" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="83.82" y="109.22" rot="R90">
+<attribute name="OC_FARNELL" x="83.82" y="109.22" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="83.82" y="109.22" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="83.82" y="109.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R8" gate="G$1" x="91.44" y="109.22" rot="R90">
+<attribute name="OC_FARNELL" x="91.44" y="109.22" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="91.44" y="109.22" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="91.44" y="109.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R10" gate="G$1" x="134.62" y="78.74" rot="R90">
+<attribute name="OC_FARNELL" x="134.62" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="134.62" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="134.62" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R11" gate="G$1" x="142.24" y="78.74" rot="R90">
+<attribute name="OC_FARNELL" x="142.24" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="142.24" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="142.24" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+6" gate="VCC" x="134.62" y="86.36"/>
+<instance part="P+7" gate="VCC" x="83.82" y="121.92"/>
+<instance part="P+8" gate="VCC" x="93.98" y="83.82"/>
+<instance part="GND33" gate="1" x="93.98" y="43.18"/>
+<instance part="C20" gate="G$1" x="68.58" y="64.77">
+<attribute name="OC_FARNELL" x="68.58" y="64.77" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="68.58" y="64.77" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="68.58" y="64.77" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND34" gate="1" x="68.58" y="57.15"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="DU"/>
+<wire x1="96.52" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="53.34" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VSS"/>
+<wire x1="93.98" y1="48.26" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<junction x="93.98" y="48.26"/>
+<pinref part="GND33" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="GND34" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="VCC33" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="ORG"/>
+<wire x1="96.52" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="58.42" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VCC"/>
+<wire x1="93.98" y1="71.12" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<junction x="93.98" y="71.12"/>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="67.31" x2="68.58" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="71.12" x2="68.58" y2="69.85" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="119.38" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="116.84" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="116.84" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<junction x="83.82" y="116.84"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="Q"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="71.12" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="73.66" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
+<junction x="134.62" y="71.12"/>
+</segment>
+</net>
+<net name="PROM_D" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="83.82" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="93.98" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="D"/>
+<wire x1="86.36" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<junction x="142.24" y="93.98"/>
+<label x="167.64" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROM_S" class="0">
+<segment>
+<wire x1="175.26" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="99.06" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="S"/>
+<wire x1="81.28" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="104.14" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<junction x="91.44" y="99.06"/>
+<label x="167.64" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROM_C" class="0">
+<segment>
+<wire x1="175.26" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="96.52" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="C"/>
+<wire x1="83.82" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="104.14" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<junction x="83.82" y="96.52"/>
+<label x="167.64" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+</nets>
+</sheet>
 </sheets>
+<errors>
+<approved hash="202,2,43.18,149.86,Q1,OE,,,,"/>
+<approved hash="202,3,200.66,53.34,Q2,OE,,,,"/>
+<approved hash="206,1,127,80.01,REF3V,,,,,"/>
+<approved hash="206,1,127,77.47,REF3V,,,,,"/>
+<approved hash="206,2,154.94,20.32,VCC12,,,,,"/>
+<approved hash="206,2,154.94,20.32,VCC12,,,,,"/>
+<approved hash="206,2,119.38,0,VCC25,,,,,"/>
+<approved hash="206,2,119.38,0,VCC25,,,,,"/>
+<approved hash="206,2,78.74,20.32,VCC33,,,,,"/>
+<approved hash="206,2,78.74,20.32,VCC33,,,,,"/>
+<approved hash="208,2,78.74,20.32,VCC33,out,,,,"/>
+<approved hash="208,2,78.74,20.32,VCC33,out,,,,"/>
+<approved hash="208,3,111.76,215.9,VCC33,sup,,,,"/>
+<approved hash="208,3,111.76,208.28,VCC33,sup,,,,"/>
+<approved hash="208,3,99.06,111.76,VCC33,sup,,,,"/>
+<approved hash="208,3,139.7,114.3,VCC33,sup,,,,"/>
+<approved hash="208,3,88.9,149.86,VCC33,sup,,,,"/>
+<approved hash="208,4,93.98,81.28,VCC33,sup,,,,"/>
+<approved hash="208,4,134.62,83.82,VCC33,sup,,,,"/>
+<approved hash="208,4,83.82,119.38,VCC33,sup,,,,"/>
+<approved hash="110,1,53.34,148.59,VCC33,VCC25,,,,"/>
+<approved hash="110,1,53.34,148.59,VCC33,VCC25,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

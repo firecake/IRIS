@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.00625" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,14 +28,14 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -120,6 +120,7 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -142,7 +143,7 @@
 <wire x1="64" y1="0" x2="0" y2="0" width="0" layer="20"/>
 <text x="37.1475" y="13.335" size="0.6096" layer="22" rot="MR0">ICG</text>
 <text x="47.625" y="2.2225" size="0.6096" layer="22" rot="MR0">SH</text>
-<text x="31.7627" y="75.16495" size="0.6096" layer="22" rot="MR0">v2.23</text>
+<text x="31.7627" y="75.16495" size="0.6096" layer="22" rot="MR0">v4.0</text>
 <rectangle x1="41.8211" y1="73.9013" x2="42.9641" y2="73.9267" layer="22" rot="R180"/>
 <rectangle x1="41.4147" y1="73.9267" x2="43.1927" y2="73.9521" layer="22" rot="R180"/>
 <rectangle x1="41.1099" y1="73.9521" x2="43.4467" y2="73.9775" layer="22" rot="R180"/>
@@ -3624,6 +3625,9 @@ Covered vias can be set in Masks (Limit).
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -4190,17 +4194,17 @@ Covered vias can be set in Masks (Limit).
 <attribute name="NAME" x="32.1945" y="37.846" size="1.27" layer="26" ratio="10" rot="MR270"/>
 <attribute name="VALUE" x="33.3375" y="35.7949" size="0.02" layer="28" rot="MR270"/>
 </element>
-<element name="TCK" library="IRIS lib v1.0" package="TEST" value="TEST" x="35.56" y="66.04" smashed="yes" rot="MR0">
-<attribute name="NAME" x="34.925" y="66.9925" size="0.6096" layer="22" rot="MR90"/>
-<attribute name="OC_FARNELL" value="1347797" x="35.56" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="ITT CANNON" x="35.56" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="001-1007-040FB9" x="35.56" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TCK" library="IRIS lib v1.0" package="TEST" value="TEST" x="31.4325" y="60.325" smashed="yes" rot="MR0">
+<attribute name="NAME" x="30.7975" y="61.2775" size="0.6096" layer="22" rot="MR90"/>
+<attribute name="OC_FARNELL" value="1347797" x="31.4325" y="60.325" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="ITT CANNON" x="31.4325" y="60.325" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="001-1007-040FB9" x="31.4325" y="60.325" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="TMS" library="IRIS lib v1.0" package="TEST" value="TEST" x="27.94" y="66.04" smashed="yes" rot="MR0">
-<attribute name="NAME" x="27.305" y="66.9925" size="0.6096" layer="22" rot="MR90"/>
-<attribute name="OC_FARNELL" value="1347797" x="27.94" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="ITT CANNON" x="27.94" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="001-1007-040FB9" x="27.94" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TMS" library="IRIS lib v1.0" package="TEST" value="TEST" x="28.575" y="55.5625" smashed="yes" rot="MR0">
+<attribute name="NAME" x="27.94" y="56.515" size="0.6096" layer="22" rot="MR90"/>
+<attribute name="OC_FARNELL" value="1347797" x="28.575" y="55.5625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="ITT CANNON" x="28.575" y="55.5625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="001-1007-040FB9" x="28.575" y="55.5625" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="TDI" library="IRIS lib v1.0" package="TEST" value="TEST" x="29.5275" y="32.0675" smashed="yes" rot="MR0">
 <attribute name="NAME" x="30.7975" y="32.7025" size="0.6096" layer="22" rot="MR180"/>
@@ -4208,22 +4212,22 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MF" value="ITT CANNON" x="29.5275" y="32.0675" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="001-1007-040FB9" x="29.5275" y="32.0675" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="3.3V" library="IRIS lib v1.0" package="TEST" value="TEST" x="39.37" y="66.04" smashed="yes" rot="MR0">
-<attribute name="NAME" x="38.735" y="67.31" size="0.6096" layer="22" rot="MR90"/>
-<attribute name="OC_FARNELL" value="1347797" x="39.37" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="ITT CANNON" x="39.37" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="001-1007-040FB9" x="39.37" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="3.3V" library="IRIS lib v1.0" package="TEST" value="TEST" x="50.8" y="66.04" smashed="yes" rot="MR0">
+<attribute name="NAME" x="50.165" y="67.31" size="0.6096" layer="22" rot="MR90"/>
+<attribute name="OC_FARNELL" value="1347797" x="50.8" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="ITT CANNON" x="50.8" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="001-1007-040FB9" x="50.8" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="GND" library="IRIS lib v1.0" package="TEST" value="TEST" x="43.18" y="66.04" smashed="yes" rot="MR0">
-<attribute name="NAME" x="42.545" y="66.9925" size="0.6096" layer="22" rot="MR90"/>
-<attribute name="OC_FARNELL" value="1347797" x="43.18" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="ITT CANNON" x="43.18" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="001-1007-040FB9" x="43.18" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="GND" library="IRIS lib v1.0" package="TEST" value="TEST" x="53.49875" y="66.04" smashed="yes" rot="MR0">
+<attribute name="NAME" x="52.86375" y="66.9925" size="0.6096" layer="22" rot="MR90"/>
+<attribute name="OC_FARNELL" value="1347797" x="53.49875" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="ITT CANNON" x="53.49875" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="001-1007-040FB9" x="53.49875" y="66.04" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="TDO1" library="IRIS lib v1.0" package="TEST" value="TEST" x="31.75" y="66.04">
-<attribute name="MPN" value="001-1007-040FB9" x="31.75" y="66.04" size="0.6096" layer="27" display="off"/>
-<attribute name="MF" value="ITT CANNON" x="31.75" y="66.04" size="0.6096" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1347797" x="31.75" y="66.04" size="0.6096" layer="27" display="off"/>
+<element name="TDO1" library="IRIS lib v1.0" package="TEST" value="TEST" x="22.06625" y="68.2625">
+<attribute name="MPN" value="001-1007-040FB9" x="22.06625" y="68.2625" size="0.6096" layer="27" display="off"/>
+<attribute name="MF" value="ITT CANNON" x="22.06625" y="68.2625" size="0.6096" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1347797" x="22.06625" y="68.2625" size="0.6096" layer="27" display="off"/>
 </element>
 <element name="SV1" library="con-harting-ml" package="ML16" value="" x="6.0325" y="40.005" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="6.0325" y="40.005" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4236,6 +4240,44 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MPN" value="" x="45.72" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="45.72" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="45.72" y="27.94" size="1.778" layer="27" display="off"/>
+</element>
+<element name="GND31" library="IRIS lib v1.0" package="TEST" value="TEST" x="56.03875" y="66.04">
+<attribute name="MPN" value="001-1007-040FB9" x="56.03875" y="66.04" size="0.04" layer="27" display="off"/>
+<attribute name="MF" value="ITT CANNON" x="56.03875" y="66.04" size="0.04" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1347797" x="56.03875" y="66.04" size="0.04" layer="27" display="off"/>
+</element>
+<element name="U1" library="IRIS" package="SOIC127P600X175-8N" value="M93C56-WMN6P" x="38.89375" y="57.4675" rot="MR270">
+<attribute name="OC_FARNELL" value="9882448" x="25.0825" y="70.32625" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PACKAGE" value="SOIC-8" x="25.0825" y="70.32625" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="OC_NEWARK" value="26M1829" x="25.0825" y="70.32625" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="STMICROELECTRONICS" x="25.0825" y="70.32625" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="SUPPLIER" value="STMICROELECTRONICS" x="25.0825" y="70.32625" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="M93C56-WMN6P" x="25.0825" y="70.32625" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="R7" library="rcl" package="R0603" value="10K" x="36.67125" y="67.15125" rot="MR0">
+<attribute name="OC_FARNELL" value="1527581" x="60.6425" y="80.9625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="TE CONNECTIVITY / NEOHM" x="60.6425" y="80.9625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="CPF0603F10KC1" x="60.6425" y="80.9625" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="R8" library="rcl" package="R0603" value="10K" x="39.37" y="63.97625" rot="MR0">
+<attribute name="OC_FARNELL" value="1527581" x="67.945" y="73.025" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="TE CONNECTIVITY / NEOHM" x="67.945" y="73.025" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="CPF0603F10KC1" x="67.945" y="73.025" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="R10" library="rcl" package="R0603" value="10K" x="41.43375" y="67.78625" rot="MR0">
+<attribute name="OC_FARNELL" value="1527581" x="60.6425" y="72.0725" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="TE CONNECTIVITY / NEOHM" x="60.6425" y="72.0725" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="CPF0603F10KC1" x="60.6425" y="72.0725" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="R11" library="rcl" package="R0603" value="2K2" x="42.38625" y="65.0875" rot="MR0">
+<attribute name="OC_FARNELL" value="1750676" x="55.08625" y="69.37375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="PANASONIC ELECTRONIC COMPONENTS" x="55.08625" y="69.37375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="ERJP03F2201V" x="55.08625" y="69.37375" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="C20" library="rcl" package="C0603" value="100nF" x="38.735" y="65.405" rot="MR0">
+<attribute name="OC_FARNELL" value="317287" x="51.435" y="60.16625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="AVX" x="51.435" y="60.16625" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="06033G104ZAT2A" x="51.435" y="60.16625" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 </elements>
 <signals>
@@ -4483,14 +4525,13 @@ Covered vias can be set in Masks (Limit).
 <wire x1="16.9935" y1="64.8335" x2="16.8275" y2="64.6675" width="0.254" layer="16"/>
 <wire x1="18.3515" y1="64.8335" x2="18.3515" y2="66.294" width="0.254" layer="16"/>
 <wire x1="18.3515" y1="66.294" x2="18.415" y2="66.3575" width="0.254" layer="16"/>
-<wire x1="23.495" y1="54.5075" x2="25.4" y2="54.5075" width="0.254" layer="16"/>
+<wire x1="23.495" y1="54.5075" x2="25.0775" y2="54.5075" width="0.254" layer="16"/>
 <contactref element="U4" pad="1"/>
 <contactref element="C18" pad="2"/>
 <contactref element="C21" pad="2"/>
 <wire x1="17.36" y1="10.16" x2="19.685" y2="10.16" width="1.27" layer="16"/>
 <wire x1="19.685" y1="10.16" x2="19.84375" y2="10.31875" width="1.27" layer="16"/>
-<wire x1="19.84375" y1="10.31875" x2="20.0025" y2="10.4775" width="1.27" layer="16"/>
-<wire x1="20.0025" y1="10.4775" x2="20.05" y2="10.525" width="1.27" layer="16"/>
+<wire x1="19.84375" y1="10.31875" x2="20.05" y2="10.525" width="1.27" layer="16"/>
 <wire x1="20.05" y1="10.525" x2="19.9" y2="12.3825" width="1.27" layer="16"/>
 <wire x1="20.0914" y1="14.6812" x2="20.05" y2="14.6398" width="1.27" layer="16"/>
 <wire x1="20.05" y1="14.6398" x2="19.9" y2="12.3825" width="1.27" layer="16"/>
@@ -4524,7 +4565,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="15.7675" y1="36.56375" x2="15.875" y2="36.67125" width="0.254" layer="16"/>
 <via x="18.415" y="36.67125" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="18.7675" y1="34.8225" x2="18.7675" y2="36.31875" width="0.254" layer="16"/>
-<wire x1="18.7675" y1="36.31875" x2="18.415" y2="36.67125" width="0.254" layer="16"/>
 <wire x1="18.7675" y1="36.31875" x2="18.415" y2="36.67125" width="0.254" layer="16"/>
 <via x="18.7325" y="49.05375" extent="1-16" drill="0.6" shape="square"/>
 <via x="26.67" y="49.05375" extent="1-16" drill="0.6" shape="square"/>
@@ -4565,8 +4605,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="14.9225" y1="44.7675" x2="14.9225" y2="44.9225" width="0.254" layer="16"/>
 <wire x1="14.9225" y1="44.9225" x2="13.1675" y2="44.9225" width="0.254" layer="16"/>
 <via x="11.43" y="50.165" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="11.43" y1="48.7925" x2="11.43" y2="50.00625" width="0.254" layer="16"/>
-<wire x1="11.43" y1="50.00625" x2="11.43" y2="50.165" width="0.254" layer="16"/>
+<wire x1="11.43" y1="48.7925" x2="11.43" y2="50.165" width="0.254" layer="16"/>
 <wire x1="36.07" y1="50.245" x2="35.8775" y2="50.12" width="0.254" layer="16"/>
 <wire x1="35.8775" y1="50.12" x2="35.8775" y2="48.26" width="0.254" layer="16"/>
 <via x="35.8775" y="48.26" extent="1-16" drill="0.6" shape="square"/>
@@ -4595,6 +4634,13 @@ Covered vias can be set in Masks (Limit).
 <wire x1="32.86125" y1="48.63375" x2="32.9175" y2="48.5775" width="0.254" layer="16"/>
 <wire x1="32.9175" y1="48.5775" x2="32.9175" y2="47.625" width="0.254" layer="16"/>
 <wire x1="32.86125" y1="48.73625" x2="32.86125" y2="48.63375" width="0.254" layer="16"/>
+<contactref element="GND31" pad="P$1"/>
+<contactref element="U1" pad="7"/>
+<contactref element="U1" pad="5"/>
+<contactref element="C20" pad="2"/>
+<wire x1="42.2275" y1="60.0075" x2="37.885" y2="65.405" width="0" layer="19" extent="16-16"/>
+<wire x1="40.79875" y1="55.0037" x2="40.3225" y2="53.34" width="0" layer="19" extent="16-16"/>
+<wire x1="38.25875" y1="55.0037" x2="40.79875" y2="55.0037" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$11">
 <contactref element="U2" pad="1"/>
@@ -4884,7 +4930,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="17.2675" y1="52.295" x2="17.2675" y2="51.0225" width="0.254" layer="16"/>
 <wire x1="17.2675" y1="51.0225" x2="17.2675" y2="49.2125" width="0.254" layer="16"/>
 <wire x1="17.2675" y1="49.2125" x2="17.145" y2="49.2125" width="0.254" layer="16"/>
-<wire x1="23.2675" y1="52.58" x2="23.2675" y2="49.53" width="0.254" layer="16"/>
+<wire x1="23.2675" y1="51.0225" x2="23.2675" y2="49.53" width="0.254" layer="16"/>
 <wire x1="23.2675" y1="49.53" x2="23.495" y2="48.895" width="0.254" layer="16"/>
 <wire x1="13.1675" y1="46.4225" x2="11.895" y2="46.4225" width="0.254" layer="16"/>
 <wire x1="11.895" y1="46.4225" x2="11.43" y2="47.0925" width="0.254" layer="16"/>
@@ -4899,6 +4945,12 @@ Covered vias can be set in Masks (Limit).
 <wire x1="29.39625" y1="38.89375" x2="30.48" y2="38.89375" width="0.254" layer="16"/>
 <wire x1="30.48" y1="38.89375" x2="30.9" y2="39.31375" width="0.254" layer="16"/>
 <wire x1="30.9" y1="39.31375" x2="30.9" y2="39.37" width="0.254" layer="16"/>
+<contactref element="U1" pad="6"/>
+<contactref element="U1" pad="8"/>
+<contactref element="C20" pad="1"/>
+<contactref element="R10" pad="2"/>
+<contactref element="R7" pad="2"/>
+<contactref element="R8" pad="2"/>
 <wire x1="29.3675" y1="38.9225" x2="29.3125" y2="38.89375" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="OSCI">
@@ -5160,7 +5212,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="21.6027" y1="58.9915" x2="21.6027" y2="56.8198" width="0.254" layer="16"/>
 <wire x1="21.6027" y1="56.8198" x2="22.86" y2="55.5625" width="0.254" layer="16"/>
 <wire x1="22.86" y1="55.5625" x2="28.575" y2="55.5625" width="0.254" layer="16"/>
-<via x="28.575" y="55.5625" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="28.575" y1="55.5625" x2="29.5275" y2="54.61" width="0.254" layer="1"/>
 <wire x1="29.5275" y1="54.61" x2="29.5275" y2="35.2425" width="0.254" layer="1"/>
 <wire x1="29.5275" y1="35.2425" x2="29.21" y2="34.925" width="0.254" layer="1"/>
@@ -5168,9 +5219,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="29.21" y1="34.925" x2="27.37" y2="34.925" width="0.254" layer="16"/>
 <wire x1="27.37" y1="34.925" x2="27.2675" y2="34.8225" width="0.254" layer="16"/>
 <contactref element="TMS" pad="P$1"/>
-<wire x1="27.94" y1="66.04" x2="28.575" y2="65.405" width="0.254" layer="1"/>
-<wire x1="28.575" y1="65.405" x2="28.575" y2="63.1825" width="0.254" layer="1"/>
-<wire x1="28.575" y1="63.1825" x2="28.575" y2="55.5625" width="0.254" layer="1"/>
 </signal>
 <signal name="TCK">
 <contactref element="U8" pad="6"/>
@@ -5178,15 +5226,10 @@ Covered vias can be set in Masks (Limit).
 <wire x1="20.9423" y1="58.9915" x2="20.9423" y2="60.9473" width="0.254" layer="16"/>
 <wire x1="20.9423" y1="60.9473" x2="21.2725" y2="61.2775" width="0.254" layer="16"/>
 <wire x1="21.2725" y1="61.2775" x2="31.4325" y2="61.2775" width="0.254" layer="16"/>
-<wire x1="31.4325" y1="58.7375" x2="31.4325" y2="49.8475" width="0.254" layer="16"/>
-<wire x1="31.4325" y1="49.8475" x2="30.7975" y2="49.2125" width="0.254" layer="16"/>
-<wire x1="30.7975" y1="49.2125" x2="30.5075" y2="48.9225" width="0.254" layer="16"/>
+<wire x1="31.4325" y1="60.325" x2="31.4325" y2="49.8475" width="0.254" layer="16"/>
+<wire x1="31.4325" y1="49.8475" x2="30.5075" y2="48.9225" width="0.254" layer="16"/>
 <wire x1="30.5075" y1="48.9225" x2="29.3675" y2="48.9225" width="0.254" layer="16"/>
 <contactref element="TCK" pad="P$1"/>
-<wire x1="35.56" y1="66.04" x2="31.4325" y2="61.9125" width="0.254" layer="1"/>
-<wire x1="31.4325" y1="61.9125" x2="31.4325" y2="60.325" width="0.254" layer="1"/>
-<via x="31.4325" y="60.325" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="31.4325" y1="60.325" x2="31.4325" y2="58.7375" width="0.254" layer="16"/>
 <wire x1="31.4325" y1="61.2775" x2="31.4325" y2="60.325" width="0.254" layer="16"/>
 </signal>
 <signal name="PROG_B">
@@ -5262,11 +5305,8 @@ Covered vias can be set in Masks (Limit).
 <signal name="TDO">
 <contactref element="U8" pad="17"/>
 <contactref element="TDO1" pad="P$1"/>
-<wire x1="31.75" y1="66.04" x2="29.845" y2="67.945" width="0.254" layer="16"/>
-<wire x1="29.845" y1="67.945" x2="23.495" y2="67.945" width="0.254" layer="16"/>
-<wire x1="23.495" y1="67.945" x2="22.225" y2="66.675" width="0.254" layer="16"/>
-<wire x1="22.225" y1="66.675" x2="22.225" y2="64.8462" width="0.254" layer="16"/>
-<wire x1="22.225" y1="64.8462" x2="22.2377" y2="64.8335" width="0.254" layer="16"/>
+<wire x1="22.06625" y1="68.2625" x2="22.2377" y2="68.09105" width="0.3048" layer="16"/>
+<wire x1="22.2377" y1="68.09105" x2="22.2377" y2="64.8335" width="0.3048" layer="16"/>
 </signal>
 <signal name="FSDI">
 <contactref element="IC2" pad="38"/>
@@ -5501,6 +5541,36 @@ Covered vias can be set in Masks (Limit).
 <wire x1="35.56" y1="35.8775" x2="35.56" y2="31.115" width="0.254" layer="16"/>
 <wire x1="35.56" y1="31.115" x2="36.83" y2="29.845" width="0.254" layer="16"/>
 <wire x1="36.83" y1="29.845" x2="36.83" y2="29.21" width="0.254" layer="16"/>
+</signal>
+<signal name="N$35">
+<contactref element="U1" pad="4"/>
+<contactref element="R11" pad="1"/>
+<contactref element="R10" pad="1"/>
+<wire x1="42.28375" y1="67.78625" x2="43.23625" y2="65.0875" width="0" layer="19" extent="16-16"/>
+<wire x1="40.79875" y1="59.9313" x2="43.23625" y2="65.0875" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="PROM_D">
+<contactref element="R11" pad="2"/>
+<contactref element="U1" pad="3"/>
+<contactref element="U$3" pad="P77"/>
+<wire x1="39.52875" y1="59.9313" x2="41.53625" y2="65.0875" width="0" layer="19" extent="16-16"/>
+<wire x1="29.3675" y1="48.4225" x2="39.52875" y2="59.9313" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="PROM_S">
+<contactref element="U1" pad="1"/>
+<contactref element="R8" pad="1"/>
+<contactref element="U$3" pad="P78"/>
+<contactref element="U$3" pad="P68"/>
+<wire x1="36.98875" y1="59.9313" x2="40.22" y2="63.97625" width="0" layer="19" extent="16-16"/>
+<wire x1="29.3675" y1="47.9225" x2="36.98875" y2="59.9313" width="0" layer="19" extent="16-16"/>
+<wire x1="23.7675" y1="51.0225" x2="29.3675" y2="47.9225" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="PROM_C">
+<contactref element="U1" pad="2"/>
+<contactref element="R7" pad="1"/>
+<contactref element="U$3" pad="P84"/>
+<wire x1="38.25875" y1="59.9313" x2="37.52125" y2="67.15125" width="0" layer="19" extent="16-16"/>
+<wire x1="29.3675" y1="44.9225" x2="38.25875" y2="59.9313" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 </board>

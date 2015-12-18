@@ -8412,22 +8412,22 @@ In this library the device names are the same as the pin names of the symbols, t
 </packages>
 <symbols>
 <symbol name="BANK0">
-<pin name="IO0/GCLK11" x="7.62" y="25.4" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L01N_0" x="7.62" y="22.86" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L01P_0/VREF_0" x="7.62" y="20.32" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02N_0/GCLK5" x="7.62" y="17.78" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02P_0/GCLK4" x="7.62" y="15.24" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03N_0/GCLK7" x="7.62" y="12.7" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03P_0/GCLK6" x="7.62" y="10.16" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04N_0/GCLK9" x="7.62" y="7.62" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04P_0/GCLK8" x="7.62" y="5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05N_0" x="7.62" y="2.54" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05P_0" x="7.62" y="0" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06N_0/PUDC_B" x="7.62" y="-2.54" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06P_0/VREF_0" x="7.62" y="-5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IP_0" x="7.62" y="-7.62" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IP_0/VREF_0" x="7.62" y="-10.16" length="middle" rot="R180"/>
-<pin name="VCCO_0" x="7.62" y="-12.7" length="middle" rot="R180"/>
+<pin name="IO0/GCLK11" x="7.62" y="25.4" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L01N_0" x="7.62" y="22.86" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L01P_0/VREF_0" x="7.62" y="20.32" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02N_0/GCLK5" x="7.62" y="17.78" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02P_0/GCLK4" x="7.62" y="15.24" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03N_0/GCLK7" x="7.62" y="12.7" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03P_0/GCLK6" x="7.62" y="10.16" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04N_0/GCLK9" x="7.62" y="7.62" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04P_0/GCLK8" x="7.62" y="5.08" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05N_0" x="7.62" y="2.54" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05P_0" x="7.62" y="0" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06N_0/PUDC_B" x="7.62" y="-2.54" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06P_0/VREF_0" x="7.62" y="-5.08" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IP_0" x="7.62" y="-7.62" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IP_0/VREF_0" x="7.62" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="VCCO_0" x="7.62" y="-12.7" visible="pin" length="middle" rot="R180"/>
 <wire x1="2.54" y1="27.94" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-15.24" x2="-22.86" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="-15.24" x2="-22.86" y2="27.94" width="0.254" layer="94"/>
@@ -8436,20 +8436,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-22.86" y="-17.78" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="BANK1">
-<pin name="IO_L01N_1" x="10.16" y="22.86" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L01P_1" x="10.16" y="20.32" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02N_1/RHCLK1" x="10.16" y="17.78" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02P_1/RHCLK0" x="10.16" y="15.24" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03N_1/TRDY1/RHCLK3" x="10.16" y="12.7" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03P_1/RHCLK2" x="10.16" y="10.16" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04N_1/RHCLK7" x="10.16" y="7.62" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04P_1/IRDY1/RHCLK6" x="10.16" y="5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05N_1" x="10.16" y="2.54" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05P_1" x="10.16" y="0" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06N_1" x="10.16" y="-2.54" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06P_1" x="10.16" y="-5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IP_1/VREF_1" x="10.16" y="-7.62" length="middle" rot="R180"/>
-<pin name="VCCO_1" x="10.16" y="-10.16" length="middle" rot="R180"/>
+<pin name="IO_L01N_1" x="10.16" y="22.86" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L01P_1" x="10.16" y="20.32" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02N_1/RHCLK1" x="10.16" y="17.78" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02P_1/RHCLK0" x="10.16" y="15.24" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03N_1/TRDY1/RHCLK3" x="10.16" y="12.7" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03P_1/RHCLK2" x="10.16" y="10.16" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04N_1/RHCLK7" x="10.16" y="7.62" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04P_1/IRDY1/RHCLK6" x="10.16" y="5.08" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05N_1" x="10.16" y="2.54" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05P_1" x="10.16" y="0" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06N_1" x="10.16" y="-2.54" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06P_1" x="10.16" y="-5.08" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IP_1/VREF_1" x="10.16" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VCCO_1" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <wire x1="5.08" y1="25.4" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-12.7" x2="-27.94" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="-12.7" x2="-27.94" y2="25.4" width="0.254" layer="94"/>
@@ -8458,33 +8458,33 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-27.94" y="25.4" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="BANK2">
-<pin name="IO_2/MOSI/CSI_B" x="5.08" y="27.94" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L01N_2/M0" x="5.08" y="25.4" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L01P_2/M1" x="5.08" y="22.86" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02N_2/CSO_B" x="5.08" y="20.32" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02P_2/M2" x="5.08" y="17.78" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04P_2/VS1" x="5.08" y="15.24" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03P_2/RDWR_B" x="5.08" y="12.7" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04N_2/VS0" x="5.08" y="10.16" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03N_2/VS2" x="5.08" y="7.62" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06P_2/D7" x="5.08" y="5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05P_2" x="5.08" y="2.54" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06N_2/D6" x="5.08" y="0" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05N_2" x="5.08" y="-2.54" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L07_2/D4" x="5.08" y="-5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L07P_2/D5" x="5.08" y="-7.62" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L08N_2/GCLK15" x="5.08" y="-10.16" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L08P_2/GCLK14" x="5.08" y="-12.7" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L09N_2/GCLK1" x="5.08" y="-15.24" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L09P_2/GCLK0" x="5.08" y="-17.78" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L10N_2/D3" x="5.08" y="-20.32" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L10P_2/INIT_B" x="5.08" y="-22.86" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L12P_2/DIN/MISO" x="5.08" y="-25.4" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L11P_2/D2" x="5.08" y="-27.94" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L12N_2/CCLK" x="5.08" y="-30.48" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L11N_2/D1" x="5.08" y="-33.02" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IP_2/VREF_2" x="5.08" y="-35.56" length="middle" rot="R180"/>
-<pin name="VCCO_2" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="IO_2/MOSI/CSI_B" x="5.08" y="27.94" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L01N_2/M0" x="5.08" y="25.4" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L01P_2/M1" x="5.08" y="22.86" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02N_2/CSO_B" x="5.08" y="20.32" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02P_2/M2" x="5.08" y="17.78" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04P_2/VS1" x="5.08" y="15.24" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03P_2/RDWR_B" x="5.08" y="12.7" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04N_2/VS0" x="5.08" y="10.16" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03N_2/VS2" x="5.08" y="7.62" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06P_2/D7" x="5.08" y="5.08" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05P_2" x="5.08" y="2.54" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06N_2/D6" x="5.08" y="0" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05N_2" x="5.08" y="-2.54" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L07_2/D4" x="5.08" y="-5.08" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L07P_2/D5" x="5.08" y="-7.62" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L08N_2/GCLK15" x="5.08" y="-10.16" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L08P_2/GCLK14" x="5.08" y="-12.7" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L09N_2/GCLK1" x="5.08" y="-15.24" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L09P_2/GCLK0" x="5.08" y="-17.78" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L10N_2/D3" x="5.08" y="-20.32" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L10P_2/INIT_B" x="5.08" y="-22.86" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L12P_2/DIN/MISO" x="5.08" y="-25.4" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L11P_2/D2" x="5.08" y="-27.94" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L12N_2/CCLK" x="5.08" y="-30.48" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L11N_2/D1" x="5.08" y="-33.02" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IP_2/VREF_2" x="5.08" y="-35.56" visible="pin" length="middle" rot="R180"/>
+<pin name="VCCO_2" x="5.08" y="-38.1" visible="pin" length="middle" rot="R180"/>
 <wire x1="0" y1="30.48" x2="0" y2="-40.64" width="0.254" layer="94"/>
 <wire x1="0" y1="-40.64" x2="-25.4" y2="-40.64" width="0.254" layer="94"/>
 <wire x1="-25.4" y1="-40.64" x2="-25.4" y2="30.48" width="0.254" layer="94"/>
@@ -8493,21 +8493,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-25.4" y="-43.18" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="BANK3">
-<pin name="IO_L01N_3" x="10.16" y="27.94" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L01P_3" x="10.16" y="25.4" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02N_3" x="10.16" y="22.86" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L02P_3" x="10.16" y="20.32" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03N_3/LHCLK1" x="10.16" y="17.78" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L03P_3/LHCLK0" x="10.16" y="15.24" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04N_3/IRDY2/LHCLK3" x="10.16" y="12.7" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L04P_3/LHCLK2" x="10.16" y="10.16" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05N_3/LHCLK7" x="10.16" y="7.62" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L05P_3/TRDY2/LHCLK6" x="10.16" y="5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06N_3" x="10.16" y="2.54" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IO_L06P_3" x="10.16" y="0" length="middle" swaplevel="1" rot="R180"/>
-<pin name="IP_3" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="IP_3/VREF_3" x="10.16" y="-5.08" length="middle" rot="R180"/>
-<pin name="VCCO_3" x="10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="IO_L01N_3" x="10.16" y="27.94" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L01P_3" x="10.16" y="25.4" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02N_3" x="10.16" y="22.86" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L02P_3" x="10.16" y="20.32" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03N_3/LHCLK1" x="10.16" y="17.78" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L03P_3/LHCLK0" x="10.16" y="15.24" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04N_3/IRDY2/LHCLK3" x="10.16" y="12.7" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L04P_3/LHCLK2" x="10.16" y="10.16" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05N_3/LHCLK7" x="10.16" y="7.62" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L05P_3/TRDY2/LHCLK6" x="10.16" y="5.08" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06N_3" x="10.16" y="2.54" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IO_L06P_3" x="10.16" y="0" visible="pin" length="middle" swaplevel="1" rot="R180"/>
+<pin name="IP_3" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="IP_3/VREF_3" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VCCO_3" x="10.16" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <wire x1="5.08" y1="30.48" x2="-27.94" y2="30.48" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="30.48" x2="-27.94" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
@@ -8550,9 +8550,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <gate name="G$1" symbol="BANK0" x="-22.86" y="22.86"/>
 <gate name="G$2" symbol="BANK1" x="33.02" y="20.32"/>
 <gate name="G$3" symbol="BANK2" x="86.36" y="45.72"/>
-<gate name="G$4" symbol="BANK3" x="129.54" y="12.7"/>
-<gate name="JTAG" symbol="JTAG" x="-71.12" y="10.16"/>
-<gate name="G$6" symbol="POWER" x="167.64" y="0"/>
+<gate name="G$4" symbol="BANK3" x="119.38" y="10.16"/>
+<gate name="G$5" symbol="JTAG" x="-71.12" y="10.16"/>
+<gate name="G$6" symbol="POWER" x="149.86" y="0"/>
 </gates>
 <devices>
 <device name="" package="VQ100">
@@ -8629,15 +8629,15 @@ In this library the device names are the same as the pin names of the symbols, t
 <connect gate="G$4" pin="IP_3" pad="P21"/>
 <connect gate="G$4" pin="IP_3/VREF_3" pad="P7"/>
 <connect gate="G$4" pin="VCCO_3" pad="P11"/>
+<connect gate="G$5" pin="DONE" pad="P54"/>
+<connect gate="G$5" pin="PROG_B" pad="P100"/>
+<connect gate="G$5" pin="TCK" pad="P76"/>
+<connect gate="G$5" pin="TDI" pad="P2"/>
+<connect gate="G$5" pin="TDO" pad="P75"/>
+<connect gate="G$5" pin="TMS" pad="P1"/>
 <connect gate="G$6" pin="GND" pad="P8 P14 P18 P42 P47 P58 P63 P69 P74 P80 P87 P91 P95"/>
 <connect gate="G$6" pin="VCCAUX" pad="P22 P55 P92"/>
 <connect gate="G$6" pin="VCCINT" pad="P17 P38 P66 P81"/>
-<connect gate="JTAG" pin="DONE" pad="P54"/>
-<connect gate="JTAG" pin="PROG_B" pad="P100"/>
-<connect gate="JTAG" pin="TCK" pad="P76"/>
-<connect gate="JTAG" pin="TDI" pad="P2"/>
-<connect gate="JTAG" pin="TDO" pad="P75"/>
-<connect gate="JTAG" pin="TMS" pad="P1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9716,7 +9716,6 @@ Low profile connectors, straight&lt;p&gt;
 </part>
 <part name="SV1" library="con-harting-ml" deviceset="ML16" device=""/>
 <part name="SV2" library="con-harting-ml" deviceset="ML16" device=""/>
-<part name="GND25" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10189,7 +10188,7 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="U$3" gate="G$2" x="-139.7" y="121.92"/>
 <instance part="U$3" gate="G$3" x="-142.24" y="68.58"/>
 <instance part="U$3" gate="G$4" x="-71.12" y="116.84"/>
-<instance part="U$3" gate="JTAG" x="43.18" y="86.36"/>
+<instance part="U$3" gate="G$5" x="2.54" y="86.36"/>
 <instance part="U$3" gate="G$6" x="17.78" y="-22.86"/>
 <instance part="GND26" gate="1" x="-129.54" y="86.36"/>
 <instance part="SJ1" gate="1" x="-119.38" y="-10.16">
@@ -10198,20 +10197,20 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="MPN" x="-119.38" y="-10.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND29" gate="1" x="-109.22" y="-15.24"/>
-<instance part="TCK" gate="G$1" x="53.34" y="101.6">
-<attribute name="OC_FARNELL" x="53.34" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="53.34" y="101.6" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="53.34" y="101.6" size="1.778" layer="96" display="off"/>
+<instance part="TCK" gate="G$1" x="12.7" y="101.6">
+<attribute name="OC_FARNELL" x="12.7" y="101.6" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="12.7" y="101.6" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="12.7" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TMS" gate="G$1" x="68.58" y="93.98">
-<attribute name="OC_FARNELL" x="68.58" y="93.98" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="68.58" y="93.98" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="68.58" y="93.98" size="1.778" layer="96" display="off"/>
+<instance part="TMS" gate="G$1" x="27.94" y="93.98">
+<attribute name="OC_FARNELL" x="27.94" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="27.94" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="27.94" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TDI" gate="G$1" x="58.42" y="99.06">
-<attribute name="OC_FARNELL" x="58.42" y="99.06" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="58.42" y="99.06" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="58.42" y="99.06" size="1.778" layer="96" display="off"/>
+<instance part="TDI" gate="G$1" x="17.78" y="99.06">
+<attribute name="OC_FARNELL" x="17.78" y="99.06" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="17.78" y="99.06" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="17.78" y="99.06" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="3.3V" gate="G$1" x="5.08" y="53.34">
 <attribute name="OC_FARNELL" x="5.08" y="53.34" size="1.778" layer="96" display="off"/>
@@ -10301,8 +10300,7 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="MF" x="149.86" y="104.14" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="149.86" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SV1" gate="1" x="-99.06" y="73.66"/>
-<instance part="GND25" gate="1" x="-88.9" y="58.42"/>
+<instance part="SV1" gate="1" x="-111.76" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -10440,40 +10438,6 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <pinref part="V4" gate="GND" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SV1" gate="1" pin="15"/>
-<pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="-91.44" y1="81.28" x2="-88.9" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="81.28" x2="-88.9" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="13"/>
-<wire x1="-88.9" y1="78.74" x2="-88.9" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="76.2" x2="-88.9" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="73.66" x2="-88.9" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="71.12" x2="-88.9" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="68.58" x2="-88.9" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="66.04" x2="-88.9" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="63.5" x2="-88.9" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="78.74" x2="-88.9" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="11"/>
-<wire x1="-91.44" y1="76.2" x2="-88.9" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="9"/>
-<wire x1="-91.44" y1="73.66" x2="-88.9" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="7"/>
-<wire x1="-91.44" y1="71.12" x2="-88.9" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="5"/>
-<wire x1="-91.44" y1="68.58" x2="-88.9" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="3"/>
-<wire x1="-91.44" y1="66.04" x2="-88.9" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="1"/>
-<wire x1="-91.44" y1="63.5" x2="-88.9" y2="63.5" width="0.1524" layer="91"/>
-<junction x="-88.9" y="78.74"/>
-<junction x="-88.9" y="76.2"/>
-<junction x="-88.9" y="73.66"/>
-<junction x="-88.9" y="71.12"/>
-<junction x="-88.9" y="68.58"/>
-<junction x="-88.9" y="66.04"/>
-<junction x="-88.9" y="63.5"/>
 </segment>
 </net>
 <net name="VCC12" class="0">
@@ -10648,15 +10612,15 @@ Low profile connectors, straight&lt;p&gt;
 <label x="88.9" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="JTAG" pin="DONE"/>
-<wire x1="50.8" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
-<label x="71.12" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$5" pin="DONE"/>
+<wire x1="10.16" y1="86.36" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
+<label x="30.48" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TDI" class="0">
 <segment>
-<pinref part="U$3" gate="JTAG" pin="TDI"/>
-<wire x1="50.8" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$5" pin="TDI"/>
+<wire x1="10.16" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="TDI" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -10667,13 +10631,13 @@ Low profile connectors, straight&lt;p&gt;
 <label x="134.62" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="71.12" y="93.98" size="1.778" layer="95"/>
-<pinref part="U$3" gate="JTAG" pin="TMS"/>
+<label x="53.34" y="93.98" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$5" pin="TMS"/>
 <pinref part="TMS" gate="G$1" pin="P$1"/>
-<wire x1="50.8" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
-<junction x="68.58" y="93.98"/>
+<wire x1="10.16" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<junction x="27.94" y="93.98"/>
 </segment>
 </net>
 <net name="TCK" class="0">
@@ -10683,12 +10647,12 @@ Low profile connectors, straight&lt;p&gt;
 <label x="88.9" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="71.12" y="101.6" size="1.778" layer="95"/>
-<pinref part="U$3" gate="JTAG" pin="TCK"/>
-<wire x1="50.8" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<label x="53.34" y="101.6" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$5" pin="TCK"/>
+<wire x1="10.16" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="TCK" gate="G$1" pin="P$1"/>
-<wire x1="53.34" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
-<junction x="53.34" y="101.6"/>
+<wire x1="12.7" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
+<junction x="12.7" y="101.6"/>
 </segment>
 </net>
 <net name="PROG_B" class="0">
@@ -10699,9 +10663,9 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="160.02" y1="99.06" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="JTAG" pin="PROG_B"/>
-<wire x1="50.8" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
-<label x="71.12" y="88.9" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$5" pin="PROG_B"/>
+<wire x1="10.16" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
+<label x="30.48" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INIT_B" class="0">
@@ -10750,7 +10714,6 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <pinref part="U$3" gate="G$1" pin="IO_L02P_0/GCLK4"/>
 <wire x1="-137.16" y1="7.62" x2="-119.38" y2="7.62" width="0.1524" layer="91"/>
-<label x="-124.46" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TDO" class="0">
@@ -10824,10 +10787,10 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="U8" gate="A" pin="TDI"/>
 <wire x1="96.52" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <label x="88.9" y="96.52" size="1.778" layer="95"/>
-<wire x1="50.8" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="JTAG" pin="TDO"/>
+<pinref part="U$3" gate="G$5" pin="TDO"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10873,17 +10836,15 @@ Low profile connectors, straight&lt;p&gt;
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$3" gate="G$3" pin="IO_L05P_2"/>
-<wire x1="-137.16" y1="71.12" x2="-134.62" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="71.12" x2="-121.92" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-121.92" y1="71.12" x2="-121.92" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-121.92" y1="73.66" x2="-106.68" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="71.12" x2="-119.38" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="1" pin="10"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="16"/>
-<wire x1="-106.68" y1="81.28" x2="-127" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="73.66" x2="-127" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-127" y1="73.66" x2="-127" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$3" pin="IO_L03P_2/RDWR_B"/>
 <wire x1="-127" y1="81.28" x2="-137.16" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -10891,55 +10852,47 @@ Low profile connectors, straight&lt;p&gt;
 <net name="N$5" class="0">
 <segment>
 <pinref part="U$3" gate="G$3" pin="IO_L03N_2/VS2"/>
-<wire x1="-137.16" y1="76.2" x2="-129.54" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="76.2" x2="-129.54" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="76.2" x2="-129.54" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="78.74" x2="-129.54" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="1" pin="14"/>
-<wire x1="-129.54" y1="78.74" x2="-106.68" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="71.12" x2="-119.38" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="12"/>
-<wire x1="-106.68" y1="76.2" x2="-127" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-127" y1="76.2" x2="-127" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-127" y1="73.66" x2="-132.08" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="73.66" x2="-132.08" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="68.58" x2="-132.08" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="68.58" x2="-132.08" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$3" pin="IO_L04N_2/VS0"/>
-<wire x1="-132.08" y1="78.74" x2="-137.16" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="76.2" x2="-137.16" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$3" gate="G$3" pin="IO_L05N_2"/>
 <pinref part="SV1" gate="1" pin="8"/>
-<wire x1="-137.16" y1="66.04" x2="-111.76" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="66.04" x2="-111.76" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="71.12" x2="-106.68" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="66.04" x2="-119.38" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U$3" gate="G$3" pin="IO_L06N_2/D6"/>
 <pinref part="SV1" gate="1" pin="6"/>
-<wire x1="-137.16" y1="68.58" x2="-127" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-127" y1="68.58" x2="-106.68" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="68.58" x2="-119.38" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U$3" gate="G$3" pin="IO_L07P_2/D5"/>
 <pinref part="SV1" gate="1" pin="4"/>
-<wire x1="-137.16" y1="60.96" x2="-109.22" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="60.96" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="66.04" x2="-106.68" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="60.96" x2="-119.38" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="2"/>
 <pinref part="U$3" gate="G$3" pin="IO_L07_2/D4"/>
-<wire x1="-106.68" y1="63.5" x2="-129.54" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="63.5" x2="-137.16" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="55.88" x2="-137.16" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11560,8 +11513,8 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="IC2" gate="G$1" pin="ACBUS0/TXDEN/GPIOH0"/>
 <wire x1="259.08" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="162.56" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="SV2" gate="1" pin="5"/>
-<wire x1="276.86" y1="172.72" x2="299.72" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="1" pin="6"/>
+<wire x1="276.86" y1="172.72" x2="284.48" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -11578,8 +11531,8 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="IC2" gate="G$1" pin="ACBUS1/GPIOH1"/>
 <wire x1="259.08" y1="160.02" x2="307.34" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="160.02" x2="307.34" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="SV2" gate="1" pin="6"/>
-<wire x1="307.34" y1="172.72" x2="284.48" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="1" pin="5"/>
+<wire x1="307.34" y1="172.72" x2="299.72" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -11587,8 +11540,8 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="IC2" gate="G$1" pin="ACBUS2/GPIOH2"/>
 <wire x1="259.08" y1="157.48" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="157.48" x2="279.4" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="SV2" gate="1" pin="3"/>
-<wire x1="279.4" y1="170.18" x2="299.72" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="1" pin="4"/>
+<wire x1="279.4" y1="170.18" x2="284.48" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -11596,8 +11549,8 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="IC2" gate="G$1" pin="ACBUS3/RXLED#/GPIOH3"/>
 <wire x1="259.08" y1="154.94" x2="312.42" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="154.94" x2="312.42" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="SV2" gate="1" pin="4"/>
-<wire x1="312.42" y1="170.18" x2="284.48" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="1" pin="3"/>
+<wire x1="312.42" y1="170.18" x2="299.72" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">

@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.00625" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -120,6 +120,7 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -142,7 +143,7 @@
 <wire x1="64" y1="0" x2="0" y2="0" width="0" layer="20"/>
 <text x="37.1475" y="13.335" size="0.6096" layer="22" rot="MR0">ICG</text>
 <text x="47.625" y="2.2225" size="0.6096" layer="22" rot="MR0">SH</text>
-<text x="31.7627" y="75.16495" size="0.6096" layer="22" rot="MR0">v2.23</text>
+<text x="31.7627" y="75.16495" size="0.6096" layer="22" rot="MR0">v4.0</text>
 <rectangle x1="41.8211" y1="73.9013" x2="42.9641" y2="73.9267" layer="22" rot="R180"/>
 <rectangle x1="41.4147" y1="73.9267" x2="43.1927" y2="73.9521" layer="22" rot="R180"/>
 <rectangle x1="41.1099" y1="73.9521" x2="43.4467" y2="73.9775" layer="22" rot="R180"/>
@@ -4237,6 +4238,11 @@ Covered vias can be set in Masks (Limit).
 <attribute name="MF" value="" x="45.72" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="45.72" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
+<element name="GND31" library="IRIS lib v1.0" package="TEST" value="TEST" x="56.03875" y="66.04">
+<attribute name="MPN" value="001-1007-040FB9" x="56.03875" y="66.04" size="0.04" layer="27" display="off"/>
+<attribute name="MF" value="ITT CANNON" x="56.03875" y="66.04" size="0.04" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1347797" x="56.03875" y="66.04" size="0.04" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -4595,6 +4601,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="32.86125" y1="48.63375" x2="32.9175" y2="48.5775" width="0.254" layer="16"/>
 <wire x1="32.9175" y1="48.5775" x2="32.9175" y2="47.625" width="0.254" layer="16"/>
 <wire x1="32.86125" y1="48.73625" x2="32.86125" y2="48.63375" width="0.254" layer="16"/>
+<contactref element="GND31" pad="P$1"/>
 </signal>
 <signal name="N$11">
 <contactref element="U2" pad="1"/>
@@ -5268,7 +5275,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="22.225" y1="66.675" x2="22.225" y2="64.8462" width="0.254" layer="16"/>
 <wire x1="22.225" y1="64.8462" x2="22.2377" y2="64.8335" width="0.254" layer="16"/>
 </signal>
-<signal name="FSCK">
+<signal name="FSDI">
 <contactref element="IC2" pad="38"/>
 <wire x1="37.2625" y1="41.6125" x2="37.2425" y2="41.5925" width="0.254" layer="16"/>
 <wire x1="37.2425" y1="41.5925" x2="32.0675" y2="41.5925" width="0.254" layer="16"/>
@@ -5276,14 +5283,14 @@ Covered vias can be set in Masks (Limit).
 <wire x1="32.0675" y1="41.5925" x2="31.7375" y2="41.9225" width="0.254" layer="16"/>
 <wire x1="31.7375" y1="41.9225" x2="29.3675" y2="41.9225" width="0.254" layer="16"/>
 </signal>
-<signal name="FSDO">
+<signal name="FSCLK">
 <contactref element="IC2" pad="39"/>
 <wire x1="32.1825" y1="42.1125" x2="37.2625" y2="42.1125" width="0.254" layer="16"/>
 <contactref element="U$3" pad="P89"/>
 <wire x1="32.1825" y1="42.1125" x2="31.8725" y2="42.4225" width="0.254" layer="16"/>
 <wire x1="31.8725" y1="42.4225" x2="29.3675" y2="42.4225" width="0.254" layer="16"/>
 </signal>
-<signal name="FSDI">
+<signal name="FSDO">
 <contactref element="IC2" pad="40"/>
 <wire x1="37.2625" y1="42.6125" x2="32.3175" y2="42.6125" width="0.254" layer="16"/>
 <contactref element="U$3" pad="P88"/>

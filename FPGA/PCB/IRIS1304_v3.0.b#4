@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.00625" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -5268,7 +5268,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="22.225" y1="66.675" x2="22.225" y2="64.8462" width="0.254" layer="16"/>
 <wire x1="22.225" y1="64.8462" x2="22.2377" y2="64.8335" width="0.254" layer="16"/>
 </signal>
-<signal name="FSCK">
+<signal name="FSDI">
 <contactref element="IC2" pad="38"/>
 <wire x1="37.2625" y1="41.6125" x2="37.2425" y2="41.5925" width="0.254" layer="16"/>
 <wire x1="37.2425" y1="41.5925" x2="32.0675" y2="41.5925" width="0.254" layer="16"/>
@@ -5276,14 +5276,14 @@ Covered vias can be set in Masks (Limit).
 <wire x1="32.0675" y1="41.5925" x2="31.7375" y2="41.9225" width="0.254" layer="16"/>
 <wire x1="31.7375" y1="41.9225" x2="29.3675" y2="41.9225" width="0.254" layer="16"/>
 </signal>
-<signal name="FSDO">
+<signal name="FSCLK">
 <contactref element="IC2" pad="39"/>
 <wire x1="32.1825" y1="42.1125" x2="37.2625" y2="42.1125" width="0.254" layer="16"/>
 <contactref element="U$3" pad="P89"/>
 <wire x1="32.1825" y1="42.1125" x2="31.8725" y2="42.4225" width="0.254" layer="16"/>
 <wire x1="31.8725" y1="42.4225" x2="29.3675" y2="42.4225" width="0.254" layer="16"/>
 </signal>
-<signal name="FSDI">
+<signal name="FSDO">
 <contactref element="IC2" pad="40"/>
 <wire x1="37.2625" y1="42.6125" x2="32.3175" y2="42.6125" width="0.254" layer="16"/>
 <contactref element="U$3" pad="P88"/>
